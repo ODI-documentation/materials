@@ -44,7 +44,7 @@ table {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #75151e;
+  background-color: #f54029;
   color:white;
   transition: 0.5s;
 }
@@ -106,7 +106,7 @@ footer img {max-height:7em; padding-bottom:1em; float:left}
 }
 
 #menu-btn {
-  background-color: #75151e;
+  background-color: #f54029;
   color: #fff;
   margin-left: -62px;
   position: fixed;
@@ -157,7 +157,7 @@ pre {color:grey}
 
 .accordion-collapse  {border-right: solid 0px white}
 
-i.fa, i.fas, i.fab {color:#75151e}
+i.fa, i.fas, i.fab {color:#f54029}
 
 .accordion-button:not(.collapsed) {background-color: inherit !important; color:black !important}
 
