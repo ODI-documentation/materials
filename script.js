@@ -12,41 +12,49 @@ $.ajax({
     catSection.classList.add("catSection")
 
     var converter = new showdown.Converter();
+    converter.setOption('simpleLineBreaks', false);
     converter.setOption('tables', true);
+    //converter.setOption('smartIndentationFix', true);
     var html = converter.makeHtml(results);
 
     // iterate over categories
     var catBlock = html.split("<h1");
     for (var i = 1; i < catBlock.length; i++) {
+
+      var cardContainer = document.createElement("div");
+
       const regexH1 = RegExp("^[^;]*<\/h1>");
       const foundH1 = regexH1.exec(catBlock[i]);
-
-      var cqSectionContainer =  document.createElement("div");
-      cqSectionContainer.classList.add("cqSectionContainer")
-
-      var ul = document.createElement("ul");
-      ul.classList.add("nav")
-      ul.classList.add("nav-tabs")
-      //ul.id = ul + i
-      $(ul).attr("role", "tablist")
-
-      var tabContentSet = document.createElement("div");
-      tabContentSet.classList.add("tab-content")
 
       // iterates over sub-categories
       var subcatBlock = catBlock[i].split("<h2");
       for (var l = 1; l < subcatBlock.length; l++) {
-        var subCatSection = document.createElement("div");
-        subCatSection.classList.add("subcatSection")
+
+        var cqSectionContainer =  document.createElement("div");
+        cqSectionContainer.classList.add("cqSectionContainer")
 
         var subCatDescSection = document.createElement("div");
         subCatDescSection.classList.add("subcatDescSection")
 
+        var subCatSection = document.createElement("div");
+        subCatSection.classList.add("subcatSection")
+
         const regexH2 = RegExp("(.|\n)*?(?=(<h3 ))");
         const foundH2 = regexH2.exec(subcatBlock[l]);
 
+        var ul = document.createElement("ul");
+        ul.classList.add("nav")
+        ul.classList.add("nav-tabs")
+        //ul.id = ul + i
+        $(ul).attr("role", "tablist")
+
+        var tabContentSet = document.createElement("div");
+        tabContentSet.classList.add("tab-content")
+
         var cqBlock = subcatBlock[l].split("<h3");
         for (var n = 1; n < cqBlock.length; n++) {
+
+
           var cqSection = document.createElement("div");
           cqSection.classList.add("cqSection")
 
@@ -60,11 +68,18 @@ $.ajax({
           li.classList.add("nav-item")
 
           navItem = cqSection.getElementsByTagName("H3")[0]
+
           button.innerHTML = navItem.textContent
           button.classList.add("nav-link") // active
           $(button).attr("data-bs-target", '#' + navItem.id)
           $(button).attr("data-bs-toggle", "tab")
           $(button).attr("role", "tab")
+
+          if (n == 1) {
+            $(button).attr("aria-selected","true")
+            button.classList.add("active")
+          }
+
           li.append(button)
           ul.append(li)
 
@@ -79,37 +94,48 @@ $.ajax({
             tabContent.classList.add("active")
           }
 
-          console.log(cqSection)
+          //console.log(cqSection)
 
           tabContent.append(cqSection)
           tabContent.append(cqSection.getElementsByTagName("table")[0])
           tabContentSet.append(tabContent)
 
+          $(cqSectionContainer).append(ul)
+          $(cqSectionContainer).append(tabContentSet)
+
+          $(cqSectionContainer).addClass("col-sm-6")
+          $(cqSectionContainer).addClass("p-5")
+
+          if (n==1) {
+          $(subCatDescSection).append('<h2 ' + foundH2[0])
+          $(subCatDescSection).addClass("col-sm-6")
+          $(subCatDescSection).addClass("p-5")}
+
+          var row = document.createElement("div");
+          row.classList.add("row")
+
+          $(row).append(subCatDescSection)
+          $(row).append(cqSectionContainer);
+
+          $(subCatSection).append(row);
+          $(row).addClass("row");
+          row.id =  "row"+l
+          //$(subCatSection).addClass("card");
+
+          var subCatContainer = document.createElement("div");
+          subCatContainer.classList.add("subCatContainer")
+          subCatContainer.classList.add("card")
+          subCatContainer.classList.add("mb-5")
+          subCatContainer.append(subCatSection)
+
+
         }
 
-        var row = document.createElement("div");
-        row.classList.add("row")
-
-        $(cqSectionContainer).addClass("col-sm-6")
-        $(cqSectionContainer).addClass("p-5")
-        $(subCatDescSection).append('<h2 ' + foundH2[0])
-        $(subCatDescSection).addClass("col-sm-6")
-        $(subCatDescSection).addClass("p-5")
-        $(row).append(subCatDescSection)
-        $(row).append(cqSectionContainer);
-        $(subCatSection).append(row);
-        $(row).addClass("row");
-        $(subCatSection).addClass("card");
-
-        $(cqSectionContainer).append(ul)
-        $(cqSectionContainer).append(tabContentSet)
-
-
-
-
+        $(cardContainer).append(subCatContainer)
       }
+
       $(catSection).append('<h1 ' + foundH1)
-      $(catSection).append(subCatSection)
+      $(catSection).append(cardContainer)
 
 }   $('#picchio').append(catSection)
 
