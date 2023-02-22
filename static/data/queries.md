@@ -8,7 +8,8 @@ Le prime quattro query presentano dei risultati significativi per lo studio dell
 
 Quali sono i significati associati alle carte che hanno seme Bastoni?
 
-`select ?cardDeck ?meaning
+```
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasSuit odikb:bastoni.
@@ -16,7 +17,8 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
+```
 
 |    |         cardDeck        |            meaning            |
 |----|-------------------------|-------------------------------|
@@ -36,7 +38,8 @@ where {
 
 Quali sono i significati associati alle carte che hanno seme Denari?
 
-`select ?cardDeck ?meaning
+```
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasSuit odikb:denari.
@@ -44,13 +47,28 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
+```
+
+|    |       cardDeck       |                   meaning                   |
+|----|----------------------|---------------------------------------------|
+|  1 | odikb:asso-di-spade  | odikb:volontà-divina                        |
+|  2 | odikb:asso-di-spade  | odikb:assenza-di-orlando                    |
+|  3 | odikb:dieci-di-spade | odikb:guerra                                |
+|  4 | odikb:dieci-di-spade | odikb:cadaveri-squartati                    |
+|  5 | odikb:dieci-di-spade | odikb:storia-bellicosa-di-orlando           |
+|  6 | odikb:dieci-di-spade | odikb:barriera-degli-arcangeli              |
+|  7 | odikb:due-di-spade   | odikb:duello-tra-protagonista-e-condottiero |
+|  8 | odikb:due-di-spade   | odikb:guardie                               |
+|  9 | odikb:due-di-spade   | odikb:duello                                |
+| 10 | odikb:nove-di-spade  | odikb:esito-della-guerra                    |
 
 ### Spade 
 
 Quali sono i significati associati alle carte che hanno seme Spade?
 
-`select ?cardDeck ?meaning
+```
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasSuit odikb:spade.
@@ -58,7 +76,8 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
+```
 
 |    |       cardDeck       |                   meaning                   |
 |----|----------------------|---------------------------------------------|
@@ -71,6 +90,9 @@ where {
 Quali sono i significati associati alle carte che hanno seme Coppe?
 
 `select ?cardDeck ?meaning
+=======
+```
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasSuit odikb:coppe.
@@ -79,6 +101,7 @@ where {
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
 }`
+```
 
 |   |        cardDeck       |            meaning            |
 |---|-----------------------|-------------------------------|
