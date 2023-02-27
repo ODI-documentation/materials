@@ -89,8 +89,6 @@ where {
 
 Quali sono i significati associati alle carte che hanno seme Coppe?
 
-`select ?cardDeck ?meaning
-=======
 ```
 select ?cardDeck ?meaning
 where {
@@ -100,7 +98,7 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
 ```
 
 |   |        cardDeck       |            meaning            |
@@ -122,7 +120,8 @@ Le prime quattro query presentano dei risultati significativi per lo studio dell
 
 Quali sono i significati associati alle carte che hanno seme Bastoni?
 
-`select ?cardDeck ?meaning
+```
+select ?cardDeck ?meaning
 select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
@@ -132,7 +131,8 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
+```
 
 |    |         cardDeck        |            meaning            |
 |----|---------------------------|-------------------------------|
@@ -154,7 +154,8 @@ where {
 
 Quali sono i significati associati alle carte che hanno seme Denari?
 
-`select ?cardDeck ?meaning
+```
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasSuit odikb:denari.
@@ -162,7 +163,8 @@ where {
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-}`
+}
+```
 
 
 |   |        cardDeck        |              meaning             |
@@ -189,7 +191,7 @@ Descrizione del set di query
 
 Competency question in Natural Language
 
-`SPARQL Query`
+```SPARQL Query```
 
 | Syntax      | Description |
 | ----------- | ----------- |
