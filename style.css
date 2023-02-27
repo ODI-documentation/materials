@@ -78,6 +78,14 @@ table {
   left:49%;
 }
 
+.rotate {
+  width: 100px;
+  animation-name: spin;
+ animation-duration: 5000ms;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear; 
+}
+
 .top-navbar {height:4em; width:100%; margin-top:1em}
 
 .top-navbar img {max-height:4em; padding-bottom:1em; float:left}
