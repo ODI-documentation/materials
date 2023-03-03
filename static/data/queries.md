@@ -12,8 +12,8 @@ What are the meanings associated with cards that have suit Wands?
 select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
-    ?cardDeck odi:hasSuit odikb:bastoni.
-    ?cardDeck odi:hasTypology odikb:numerale.
+    ?cardDeck odi:hasSuit bacodi:bastoni.
+    ?cardDeck odi:hasTypology bacodi:numerale.
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
@@ -22,16 +22,16 @@ where {
 
 |    |         cardDeck        |            meaning            |
 |----|-------------------------|-------------------------------|
-|  1 | odikb:due-di-bastoni    | odikb:necessità-di-una-scelta |
-|  2 | odikb:due-di-bastoni    | odikb:vittoria-altro-su-uno   |
-|  3 | odikb:due-di-bastoni    | odikb:necessità-di-una-scelta |
-|  4 | odikb:due-di-bastoni    | odikb:due-bastoni             |
-|  5 | odikb:asso-di-bastoni   | odikb:scettro                 |
-|  6 | odikb:asso-di-bastoni   | odikb:tronco                  |
-|  7 | odikb:cinque-di-bastoni | odikb:vista-del-massacro      |
-|  8 | odikb:cinque-di-bastoni | odikb:schianto-dei-tronchi    |
-|  9 | odikb:cinque-di-bastoni | odikb:bosco                   |
-| 10 | odikb:dieci-di-bastoni  | odikb:bosco                   |
+|  1 | bacodi:due-di-bastoni    | bacodi:necessità-di-una-scelta |
+|  2 | bacodi:due-di-bastoni    | bacodi:vittoria-altro-su-uno   |
+|  3 | bacodi:due-di-bastoni    | bacodi:necessità-di-una-scelta |
+|  4 | bacodi:due-di-bastoni    | bacodi:due-bastoni             |
+|  5 | bacodi:asso-di-bastoni   | bacodi:scettro                 |
+|  6 | bacodi:asso-di-bastoni   | bacodi:tronco                  |
+|  7 | bacodi:cinque-di-bastoni | bacodi:vista-del-massacro      |
+|  8 | bacodi:cinque-di-bastoni | bacodi:schianto-dei-tronchi    |
+|  9 | bacodi:cinque-di-bastoni | bacodi:bosco                   |
+| 10 | bacodi:dieci-di-bastoni  | bacodi:bosco                   |
 
 ### Coins
 
@@ -41,8 +41,8 @@ What are the meanings associated with cards that have suit Coins?
 select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
-    ?cardDeck odi:hasSuit odikb:denari.
-    ?cardDeck odi:hasTypology odikb:numerale.
+    ?cardDeck odi:hasSuit bacodi:denari.
+    ?cardDeck odi:hasTypology bacodi:numerale.
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
@@ -62,7 +62,7 @@ where {
 |  9 | bacodi:due-di-denari    | bacodi:due-denari                  |
 | 10 | bacodi:due-di-denari    | bacodi:dualità-del-bene-e-del-male |
 
-### Swords 
+### Swords
 
 What are the meanings associated with cards that have suit Swords?
 
@@ -70,8 +70,8 @@ What are the meanings associated with cards that have suit Swords?
 select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
-    ?cardDeck odi:hasSuit odikb:spade.
-    ?cardDeck odi:hasTypology odikb:numerale.
+    ?cardDeck odi:hasSuit bacodi:spade.
+    ?cardDeck odi:hasTypology bacodi:numerale.
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
@@ -99,8 +99,8 @@ What are the meanings associated with cards that have suit Cups?
 select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
-    ?cardDeck odi:hasSuit odikb:coppe.
-    ?cardDeck odi:hasTypology odikb:numerale.
+    ?cardDeck odi:hasSuit bacodi:coppe.
+    ?cardDeck odi:hasTypology bacodi:numerale.
     ?cardStory odi:specifies ?cardDeck.
     ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
@@ -130,13 +130,13 @@ Triumphs present more complex miniatures and this complexity stimulates the auth
 Are there cases in which the court cards don't have a reference to the protagonist?
 
 ```
-select ?cardDeck ?meaning 
+select ?cardDeck ?meaning
 where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasTypology bacodi:carta-di-corte.
     ?cardStory odi:specifies ?cardDeck.
-    ?cardStory odi:carriesRepresentation ?representation. 
-    ?representation odi:hasMeaningOf ?meaning. 
+    ?cardStory odi:carriesRepresentation ?representation.
+    ?representation odi:hasMeaningOf ?meaning.
 }
 ```
 
@@ -163,9 +163,9 @@ where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasTypology bacodi:carta-di-corte.
     ?cardStory odi:specifies ?cardDeck.
-    ?cardStory odi:carriesRepresentation ?representation. 
+    ?cardStory odi:carriesRepresentation ?representation.
     ?representation odi:hasMeaningOf ?meaning.
-    ?representation a ?class 
+    ?representation a ?class
   FILTER NOT EXISTS {?representation odi:hasMeaningOf bacodi:protagonista}
 }
 ```
@@ -193,7 +193,7 @@ where {
     ?cardDeck a odi:DeckCard.
     ?cardDeck odi:hasTypology bacodi:trionfo.
     ?cardStory odi:specifies ?cardDeck.
-    ?cardStory odi:carriesRepresentation ?representation. 
+    ?cardStory odi:carriesRepresentation ?representation.
     ?representation a ?class.
 }
 ```
@@ -225,12 +225,12 @@ where {
 | 23 | bacodi:il-matto    | odi:Character       |
 | 24 | bacodi:il-matto    | odi:Character       |
 | 25 | bacodi:il-mondo    | odi:FinctionalPlace |
- 
-## Use different cards for the same representation in the same story 
+
+## Use different cards for the same representation in the same story
 
 Two cards may have a semantic link to express an identity (odi:sameAs) or an evolution of the same representation (odi:changesIn).  
 The results of the two queries reveal six occurrences where two cards are used to represent the same entity within a story and ten occurrences where two cards are used to represent an evolution of the same entity within a story.
-In the first case, the entity of the two cards is almost always a character (5 occurrences vs. 6 total occurrences), with the exception of one occurrence where it is a symbol (richness). Thus, one notes an almost exclusive propensity to delineate a character's identity through the use of two different cards in the same story. 
+In the first case, the entity of the two cards is almost always a character (5 occurrences vs. 6 total occurrences), with the exception of one occurrence where it is a symbol (richness). Thus, one notes an almost exclusive propensity to delineate a character's identity through the use of two different cards in the same story.
 In the second case, the evolution expressed between the two cards always occurs for a character, without exception (thus excluding inanimate objects, events, places and symbols). Thus, evolution turns out to be an exclusive property of characters. Most of the time (6 vs. 10), both the starting card and the finishing card is a triumph, but there are occurrences of court cards: three as a starting card (e.g. from the *Cavaliere di Coppe* to *Il Penduto* and only one as a finishing card (from *La Stella* to the *Regina di Spade*). This means that triumphs are more effective for the writer to represent an evolution of a character in the story and that the court card competes with the triumph to represent a condition - physical or intellectual - at the beginning, but not to express evolution.
 
 ### Identity
@@ -238,7 +238,7 @@ In the second case, the evolution expressed between the two cards always occurs 
 Which different cards have the same representation?
 
 ```
-select distinct ?cardDeck1 ?story1 ?cardDeck2 ?story2 ?meaning 
+select distinct ?cardDeck1 ?story1 ?cardDeck2 ?story2 ?meaning
 where {
     ?cardStory1 odi:specifies ?cardDeck1.
     ?cardStory1 odi:carriesRepresentation ?representation1.
@@ -259,12 +259,12 @@ where {
 |  2 | bacodi:il-bagatto  | odi:Character       |
 |  3 | bacodi:il-bagatto  | odi:Character       |
 
-### Evolution 
+### Evolution
 
-Which different cards express an evolution of the same representation? 
+Which different cards express an evolution of the same representation?
 
 ```
-select distinct ?cardDeck1 ?story1 ?cardDeck2 ?story2 ?meaning 
+select distinct ?cardDeck1 ?story1 ?cardDeck2 ?story2 ?meaning
 where {
     ?cardStory1 odi:specifies ?cardDeck1.
     ?cardStory1 odi:carriesRepresentation ?representation1.
@@ -285,6 +285,34 @@ where {
 |  2 | bacodi:il-bagatto  | odi:Character       |
 |  3 | bacodi:il-bagatto  | odi:Character       |
 
+## Use the same cards with the same meaning in different stories
+
+The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific iconography, and because it is used in two stories that share a reference to the story of Orlando. Significant, however, are the other results of the query, as they show how other cards share the same representation in different occurrences in the text, despite having miniatures that cannot be univocally interpreted: for example, the *Nove di Coppe* that in both the first and last stories of the chapter *Tutte le altre storie* is used to represent the banquet; the *Otto di Coppe* that in *Storia dell'ingrato punito* and in the last story of the final chapter signifies the wedding banquet.
+
+### Different stories
+
+Which cards have the same representation in the different stories?
+
+```
+select ?cardDeck ?meaning (group_concat(distinct ?story) as ?stories) (count(distinct ?story) as ?n_stories)
+where {
+   ?cardDeck a odi:DeckCard.
+   ?cardStory odi:specifies ?cardDeck.
+   ?story odi:hasCard ?cardStory.
+   ?cardStory odi:carriesRepresentation ?representation.
+   ?representation odi:hasMeaningOf ?meaning.  
+}
+GROUP BY ?cardDeck ?meaning
+HAVING (?n_stories XXX 1)
+ORDER BY DESC (?n_stories)
+```
+
+|    |      cardDeck      |        class        |
+|----|--------------------|---------------------|
+|  1 | bacodi:il-bagatto  | odi:Character       |
+|  2 | bacodi:il-bagatto  | odi:Character       |
+|  3 | bacodi:il-bagatto  | odi:Character       |
+
 # The text structure
 
 ## The position of the cards in each story
@@ -293,7 +321,7 @@ Each protagonist can have a "simple relationship", i.e. a direct relationship, o
 In the first case, only the triumphs *Il Mondo* and *La Torre* are, in fact, used twice to express the same narrative situation: the meaning of *Il Mondo*is specified by *La Torre* (*Storia dell'ingrato punito* and the first story of *Tutte le altre storie*).
 In the second case, the numerals *Due di Denari* and *Quattro di Spade* have a general relation with the triumph *Il Diavolo* in three occurrences: *Storia della sposa dannata*, and the fourth and fifth story of the chapter *Tutte le altre storie*. Therefore, a significant *pattern* of cards was discovered: *Il Diavolo*, the *Due di Denari* and the *Quattro di Spade*.
 
-### Specification 
+### Specification
 
 Which pairs of cards are used, more than once, close together where one is specified by the other?
 
@@ -303,7 +331,7 @@ where {
     ?cardStory1 odi:specifies ?cardDeck1.
     ?cardStory1 odi:carriesRepresentation ?representation1.
     ?story1 odi:hasCard ?cardStory1.
-    ?representation1 odi:hasMeaningOf ?meaning1. 
+    ?representation1 odi:hasMeaningOf ?meaning1.
     ?cardStory2 odi:specifies ?cardDeck2.
     ?cardStory2 odi:carriesRepresentation ?representation2.
     ?story2 odi:hasCard ?cardStory2.
@@ -312,11 +340,18 @@ where {
     FILTER (?cardDeck1 != ?cardDeck2)
 }
 ```
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|    |         cardDeck1         |            story1            |       cardDeck2       |            story2            |
+|----|---------------------------|------------------------------|-----------------------|------------------------------|
+|  1 | bacodi:cavaliere-di-spade | bacodi:TuttelealtrestorieDue | bacodi:nove-di-denari | bacodi:TuttelealtrestorieDue |
+|  2 | bacodi:dieci-di-denari    | bacodi:TuttelealtrestorieDue | bacodi:il-giudizio    | bacodi:TuttelealtrestorieDue |
+|  3 | bacodi:dieci-di-denari    | bacodi:TuttelealtrestorieDue | bacodi:la-torre       | bacodi:TuttelealtrestorieDue |
+|  4 | bacodi:dieci-di-denari    | bacodi:TuttelealtrestorieDue | bacodi:otto-di-coppe  | bacodi:TuttelealtrestorieDue |
+|  5 | bacodi:dieci-di-denari    | bacodi:TuttelealtrestorieDue | bacodi:sei-di-spade   | bacodi:TuttelealtrestorieDue |
+|  6 | bacodi:il-giudizio        | bacodi:storiaSei             | bacodi:dieci-di-coppe | bacodi:storiaSei             |
+|  7 | bacodi:il-mondo           | bacodi:storiaQuattro         | bacodi:la-torre       | bacodi:storiaQuattro         |
+|  8 | bacodi:il-mondo           | bacodi:TuttelealtrestorieUno | bacodi:la-torre       | bacodi:TuttelealtrestorieUno |
+|  9 | bacodi:il-penduto         | bacodi:TuttelealtrestorieDue | bacodi:il-sole        | bacodi:TuttelealtrestorieDue |
+| 10 | bacodi:il-penduto         | bacodi:TuttelealtrestorieDue | bacodi:la-giustizia   | bacodi:TuttelealtrestorieDue |
 
 ### General relation
 
@@ -328,7 +363,7 @@ where {
     ?cardStory1 odi:specifies ?cardDeck1.
     ?cardStory1 odi:carriesRepresentation ?representation1.
     ?story1 odi:hasCard ?cardStory1.
-    ?representation1 odi:hasMeaningOf ?meaning1. 
+    ?representation1 odi:hasMeaningOf ?meaning1.
     ?cardStory2 odi:specifies ?cardDeck2.
     ?cardStory2 odi:carriesRepresentation ?representation2.
     ?story2 odi:hasCard ?cardStory2.
@@ -347,8 +382,8 @@ where {
 ## The iconographic dimension
 
 There are a total of 118 iconographic depictions running along the edition's margins, comprising 61 large and 57 small images. However, the iconographic dimensions are different.
-The three queries made for the iconographic dimension of the cards show that, as far as numerals and triumphs are concerned, the discrepancy between the number of big dimensions and small dimensions is little. 
-Differently, the iconographic dimension of the court cards, and in particular those representing the protagonist, is almost always big with the exception of three occurrences in the sixth chapter Tutte le altre storie in which it is drawn on the page with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences, however, the three cards express something else than the presentation at the beginning of the story. In other words, the big size serves, initially, the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card, it can be either big or small in size. For example, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented with the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented with *Il Bagatto*, which serves to express the protagonist's desire to become emperor, and it has got a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist card, the big dimension indicates the importance of the protagonist as the main driving force of the narrative. 
+The three queries made for the iconographic dimension of the cards show that, as far as numerals and triumphs are concerned, the discrepancy between the number of big dimensions and small dimensions is little.
+Differently, the iconographic dimension of the court cards, and in particular those representing the protagonist, is almost always big with the exception of three occurrences in the sixth chapter Tutte le altre storie in which it is drawn on the page with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences, however, the three cards express something else than the presentation at the beginning of the story. In other words, the big size serves, initially, the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card, it can be either big or small in size. For example, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented with the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented with *Il Bagatto*, which serves to express the protagonist's desire to become emperor, and it has got a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist card, the big dimension indicates the importance of the protagonist as the main driving force of the narrative.
 
 ### The protagonist
 
@@ -379,7 +414,7 @@ where {
 |  9 | bacodi:fante-di-coppe       | bacodi:TuttelealtrestorieCinque | bacodi:grande  |   
 | 10 | bacodi:il-bagatto           | bacodi:TuttelealtrestorieCinque | bacodi:piccola |   
 
-### Big 
+### Big
 
 How many cards have a big iconographic dimension?
 
@@ -400,7 +435,7 @@ GROUP BY ?typology ORDER BY DESC (?n)
 | 2 | bacodi:numerale       | "16"^^xsd:integer |
 | 3 | bacodi:carta-di-corte | "14"^^xsd:integer |
 
-### Small 
+### Small
 
 How many cards have a small iconographic dimension?
 
@@ -421,12 +456,42 @@ GROUP BY ?typology ORDER BY DESC (?n)
 | 2 | bacodi:numerale       | "15"^^xsd:integer |
 | 3 | bacodi:carta-di-corte | "5"^^xsd:integer  |
 
+## Position of the cards
+
+The position of the cards concerns the order in which they appear in the stories.
+The results of query 16 show that some cards appear in two different stories at the same time. In other words, two cards are mentioned in two different stories at the same point in the order of their appearance. This is possible due to the strict architecture of the square that interweaves the cards in such a way that some of them are used more than once, but without being able to move them from their previously established position.
+
+### Same position
+
+Are there cards that have the same position in more than one story?
+
+```
+select ?cardDeck ?position (group_concat(distinct ?story) as ?stories) (count(distinct ?story) as ?n_stories)
+where {
+    ?cardDeck a odi:DeckCard.
+    ?cardStory odi:specifies ?cardDeck.
+    ?story odi:hasCard ?cardStory.
+    ?cardStory odi:carriesRepresentation ?representation.
+    ?representation odi:hasMeaningOf ?meaning.
+    ?cardStory odi:hasPositionInTheText ?position.    
+}
+GROUP BY ?cardDeck ?position
+HAVING (?n_stories XXX 1)
+ORDER BY DESC (?n_stories)
+```
+
+|    |      cardDeck      |        class        |
+|----|--------------------|---------------------|
+|  1 | bacodi:il-bagatto  | odi:Character       |
+|  2 | bacodi:il-bagatto  | odi:Character       |
+|  3 | bacodi:il-bagatto  | odi:Character       |
+
 # Relationships between cards
 
 ## "simple relations" and "complex relation"
 
-The direct relationships that each protagonist has with the other cards within each story have a minimal gap compared to the indirect ones: the former, in fact, number 83 compared to the total number of 71 for the latter. 
-The last query provides one of the most interesting results at the narratological level: some properties, relating to narrative relationships, are used more frequently than others. By following the decreasing order of incidence of the various relations, it is possible to delineate a constant narrative sequence: a character (protagonist) comes across (odi:bumpsInto) another character at a certain place in the story - which is almost always the forest or the forest - (odi:movingThrough) and, once he receives something (odi:receives), he sets off to reach another place (odi:arrivesAt), in which the story will develop further. This narrative sequence is interesting to note an order in the way Calvino tells stories using tarot cards as signs. 
+The direct relationships that each protagonist has with the other cards within each story have a minimal gap compared to the indirect ones: the former, in fact, number 83 compared to the total number of 71 for the latter.
+The last query provides one of the most interesting results at the narratological level: some properties, relating to narrative relationships, are used more frequently than others. By following the decreasing order of incidence of the various relations, it is possible to delineate a constant narrative sequence: a character (protagonist) comes across (odi:bumpsInto) another character at a certain place in the story - which is almost always the forest or the forest - (odi:movingThrough) and, once he receives something (odi:receives), he sets off to reach another place (odi:arrivesAt), in which the story will develop further. This narrative sequence is interesting to note an order in the way Calvino tells stories using tarot cards as signs.
 
 ### Simple
 
@@ -456,7 +521,7 @@ How many cards have a complex relationship with the protagonist?
 ```
 select ?representation1 ?representation2
 where {
-    ?representation1 odi:hasMeaningOf bacodi:protagonista. 
+    ?representation1 odi:hasMeaningOf bacodi:protagonista.
     ?representation2 a ?class2.
     ?class2 rdfs:subClassOf odi:Representation.
     ?representation1 odi:hasComplexRelationWith ?representation2.
@@ -507,20 +572,3 @@ GROUP BY ?relation ORDER BY DESC (?n)
 | 16 | odi:loses                     | "1"^^xsd:integer  |
 | 17 | odi:climbs                    | "1"^^xsd:integer  |
 | 18 | odi:speaksTo                  | "1"^^xsd:integer  |
-
-# MACROCATEGORIA
-
-## CARD (= set di query)
-
-Descrizione del set di query
-
-### Competency question id or brief title
-
-Competency question in Natural Language
-
-```SPARQL Query```
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |

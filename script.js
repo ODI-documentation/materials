@@ -12,8 +12,10 @@ $.ajax({
     catSection.classList.add("catSection")
 
     var converter = new showdown.Converter();
+    showdown.setFlavor('github');
     converter.setOption('simpleLineBreaks', false);
     converter.setOption('tables', true);
+    converter.setOption('backslashEscapesHTMLTags', true);
     //converter.setOption('smartIndentationFix', true);
     var html = converter.makeHtml(results);
 
@@ -127,7 +129,6 @@ $.ajax({
           subCatContainer.classList.add("card")
           subCatContainer.classList.add("mb-5")
           subCatContainer.append(subCatSection)
-
 
         }
 

@@ -30,14 +30,6 @@ body {
 }
 
 .cqSection h3 {visibility: hidden}
- table, th, td {
-  border: 1px solid;
-}
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .side-navbar {
   width: 180px;
@@ -83,8 +75,25 @@ table {
   animation-name: spin;
  animation-duration: 5000ms;
  animation-iteration-count: infinite;
- animation-timing-function: linear; 
+ animation-timing-function: linear;
 }
+
+table {
+  display: block;
+  width:100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  
+}
+
+td, th {padding:0.5vw; width:100%}
+
+th {
+  background-color:#006600;
+  color:white}
 
 .top-navbar {height:4em; width:100%; margin-top:1em}
 
