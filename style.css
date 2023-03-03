@@ -44,7 +44,7 @@ table {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #f54029;
+  background-color: #006600;
   color:white;
   transition: 0.5s;
 }
@@ -114,7 +114,7 @@ footer img {max-height:7em; padding-bottom:1em; float:left}
 }
 
 #menu-btn {
-  background-color: #f54029;
+  background-color: #006600;
   color: #fff;
   margin-left: -62px;
   position: fixed;
