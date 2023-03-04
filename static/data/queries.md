@@ -226,6 +226,41 @@ where {
 | 24 | bacodi:il-matto    | odi:Character       |
 | 25 | bacodi:il-mondo    | odi:FinctionalPlace |
 
+## Use the same cards with the same meaning in different stories
+
+The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific iconography, and because it is used in two stories that share a reference to the story of Orlando. Significant, however, are the other results of the query, as they show how other cards share the same representation in different occurrences in the text, despite having miniatures that cannot be univocally interpreted: for example, the *Nove di Coppe* that in both the first and last stories of the chapter *Tutte le altre storie* is used to represent the banquet; the *Otto di Coppe* that in *Storia dell'ingrato punito* and in the last story of the final chapter signifies the wedding banquet.
+
+### Same meaning in different stories
+
+Which cards have the same representation in the different stories?
+
+```
+select ?cardDeck ?meaning (group_concat(distinct ?story) as ?stories) (count(distinct ?story) as ?n_stories)
+where {
+   ?cardDeck a odi:DeckCard.
+   ?cardStory odi:specifies ?cardDeck.
+   ?story odi:hasCard ?cardStory.
+   ?cardStory odi:carriesRepresentation ?representation.
+   ?representation odi:hasMeaningOf ?meaning.  
+}
+GROUP BY ?cardDeck ?meaning
+HAVING (?n_stories XXX 1)
+ORDER BY DESC (?n_stories)
+```
+
+|    |          cardDeck      |         meaning           |      stories    |       n_stories      |
+|----|------------------------|---------------------------|-----------------|----------------------|
+|  1 | bacodi:il-diavolo      | bacodi:diavolo            | "https://purl.org/ebr/odi/data/TuttelealtrestorieCinque https://purl.org/ebr/odi/data/TuttelealtrestorieQuattro https://purl.org/ebr/odi/data/storiaTre"                |  "3"^^xsd:integer    |
+|  2 | bacodi:nove-di-bastoni | bacodi:bosco              | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieSei https://purl.org/ebr/odi/data/storiaUno"                |  "3"^^xsd:integer    |
+|  3 | bacodi:il-papa         | bacodi:papa               | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/storiaTre"                |  "2"^^xsd:integer    |
+|  4 | bacodi:la-forza        | bacodi:brigante           | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/storiaUno"                |  "2"^^xsd:integer    |
+|  5 | bacodi:nove-di-denari  | bacodi:ricchezza          | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/storiaQuattro"                |  "2"^^xsd:integer    |
+|  6 | bacodi:sei-di-spade    | bacodi:battaglie          | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieQuattro"                |  "2"^^xsd:integer    |
+|  7 | bacodi:otto-di-coppe   | bacodi:banchetto-di-nozze | "https://purl.org/ebr/odi/data/TuttelealtrestorieSei https://purl.org/ebr/odi/data/storiaUno"                |  "2"^^xsd:integer    |
+|  8 | bacodi:lo-eremita      | bacodi:indovino           | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaSei"                |  "2"^^xsd:integer    |
+|  9 | bacodi:nove-di-coppe   | bacodi:banchetto          | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaSei"                |  "2"^^xsd:integer    |
+| 10 | bacodi:il-sole         | bacodi:bambino            | "https://purl.org/ebr/odi/data/storiaCinque https://purl.org/ebr/odi/data/storiaUno"                |  "2"^^xsd:integer    |   
+
 ## Use different cards for the same representation in the same story
 
 Two cards may have a semantic link to express an identity (odi:sameAs) or an evolution of the same representation (odi:changesIn).  
@@ -252,12 +287,14 @@ where {
     FILTER (?cardDeck1 != ?cardDeck2)
 }
 ```
-
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|   | cardDeck1 | story1 | cardDeck2 | story2 | meaning |
+|---|-----------|--------|-----------|--------|---------|
+| 1 | bacodi:il-bagatto | bacodi:storiaDue | bacodi:il-diavolo | bacodi:storiaDue | bacodi:visitatore |
+| 2 | bacodi:fante-di-coppe | bacodi:TuttelealtrestorieCinque | bacodi:il-bagatto | bacodi:TuttelealtrestorieCinque | bacodi:protagonista |
+| 3 | bacodi:la-forza | bacodi:TuttelealtrestorieDue | bacodi:fante-di-bastoni | bacodi:TuttelealtrestorieDue | bacodi:brigante |
+| 4 | bacodi:la-stella | bacodi:storiaTre | bacodi:la-morte | bacodi:storiaTre | bacodi:fanciulla |
+| 5 | bacodi:nove-di-denari | bacodi:storiaQuattro | bacodi:dieci-di-denari | bacodi:storiaQuattro | bacodi:ricchezza |
+| 6 | bacodi:regina-di-bastoni | bacodi:TuttelealtrestorieSei | bacodi:la-giustizia | bacodi:TuttelealtrestorieSei | bacodi:protagonista |
 
 ### Evolution
 
@@ -279,43 +316,22 @@ where {
 }
 ```
 
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
-
-## Use the same cards with the same meaning in different stories
-
-The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific iconography, and because it is used in two stories that share a reference to the story of Orlando. Significant, however, are the other results of the query, as they show how other cards share the same representation in different occurrences in the text, despite having miniatures that cannot be univocally interpreted: for example, the *Nove di Coppe* that in both the first and last stories of the chapter *Tutte le altre storie* is used to represent the banquet; the *Otto di Coppe* that in *Storia dell'ingrato punito* and in the last story of the final chapter signifies the wedding banquet.
-
-### Different stories
-
-Which cards have the same representation in the different stories?
-
-```
-select ?cardDeck ?meaning (group_concat(distinct ?story) as ?stories) (count(distinct ?story) as ?n_stories)
-where {
-   ?cardDeck a odi:DeckCard.
-   ?cardStory odi:specifies ?cardDeck.
-   ?story odi:hasCard ?cardStory.
-   ?cardStory odi:carriesRepresentation ?representation.
-   ?representation odi:hasMeaningOf ?meaning.  
-}
-GROUP BY ?cardDeck ?meaning
-HAVING (?n_stories XXX 1)
-ORDER BY DESC (?n_stories)
-```
-
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|   | cardDeck1 | story1 | textualreference1 | textualreference2 | cardDeck2 | story2 |
+|---|-----------|--------|-------------------|-------------------|-----------|--------|
+| 1 | bacodi:la-temperanza | bacodi:storiaUno | "«forse figlia d'un boscaiolo o d'un capraio, che avanzava [...] reggendo due brocche d'acqua, certo di ritorno dalla fonte.»" | "«la sua salvatrice del bosco, fatta più piena e risoluta e calma, con un melanconico sorriso [...].»" | bacodi:la-giustizia | bacodi:storiaUno |
+| 2 | bacodi:la-temperanza | bacodi:storiaUno | "«forse figlia d'un boscaiolo o d'un capraio, che avanzava [...] reggendo due brocche d'acqua, certo di ritorno dalla fonte.»" | "«spadaccina agguerita»" | bacodi:la-giustizia | bacodi:storiaUno |
+| 3 | bacodi:la-temperanza | bacodi:storiaUno | "«semplice figlia dei boschi»" | "«la sua salvatrice del bosco, fatta più piena e risoluta e calma, con un melanconico sorriso [...].»" | bacodi:la-giustizia | bacodi:storiaUno |
+| 4 | bacodi:la-temperanza | bacodi:storiaUno | "«semplice figlia dei boschi»" | "«spadaccina agguerita»" | bacodi:la-giustizia | bacodi:storiaUno |
+| 5 | bacodi:cavaliere-di-coppe | bacodi:storiaUno | "«un giovane roseo e biondo che sfoggiava un mantello raggiante di ricami a forma di sole, [...] mosso [...] più dal desiderio d'apparire che da una vera vocazione cavalleresca.»" | "«il nostro giovane biondo spogliato d'ogni avere, e lasciato a penzolare da un ramo, a testa in giù.»" | bacodi:il-penduto | bacodi:storiaUno |
+| 6 | bacodi:re-di-spade | bacodi:storiaCinque | "«Orlando paladino che mulinava la sua Durlindana.»" | "«Sfogato ormai il più grosso groppo di furore, [...] con la testa piene di penne [...] ecco che Orlando ersa disceso giù nel cuore caotico delle cose, [...] al punto d'intersezione di tutti gli ordini possibili.»" | bacodi:il-matto | bacodi:storiaCinque |
+| 7 | bacodi:la-forza | bacodi:TuttelealtrestorieDue | "«feroce brigante»" | "«un feroce brigante [...] appeso a uno strumento di tortura»" | bacodi:il-penduto | bacodi:TuttelealtrestorieDue |
+| 8 | bacodi:la-forza | bacodi:TuttelealtrestorieSei | "«l'energumeno»" | "«lo scherano [...] legato a testa in giù»" | bacodi:il-penduto | bacodi:TuttelealtrestorieSei |
+| 9 | bacodi:la-stella | bacodi:storiaTre | "«una giovinetta di sidereo pallore che s'aggirava nella notte in camicia e coi capelli sciolti, levando alto un cero acceso.»" | "«ecco la meschinella trasformarsi in regina da torneo, pavoneggiarsi, far la gatta.»" | bacodi:regina-di-spade | bacodi:storiaTre |
+| 10 | bacodi:regina-di-bastoni | bacodi:TuttelealtrestorieSei | "«nostra narratrice, allora tenera educanda»" | "«l'eroina s'era celata sotto i panni d'una ostessa o ancella di castello»" | bacodi:la-temperanza | bacodi:TuttelealtrestorieSei |
 
 # The text structure
 
-## The position of the cards in each story
+## *Pattern* of cards
 
 Each protagonist can have a "simple relationship", i.e. a direct relationship, or a "complex relationship", i.e. an indirect relationship, with the other cards in its history: in particular, cards that have a direct relationship can either be specified (odi:isSpecifiedBy) or have a general relationship (odi:isRelatedWith) with the card that has an indirect relationship with that protagonist.
 In the first case, only the triumphs *Il Mondo* and *La Torre* are, in fact, used twice to express the same narrative situation: the meaning of *Il Mondo*is specified by *La Torre* (*Storia dell'ingrato punito* and the first story of *Tutte le altre storie*).
@@ -340,6 +356,7 @@ where {
     FILTER (?cardDeck1 != ?cardDeck2)
 }
 ```
+
 |    |         cardDeck1         |            story1            |       cardDeck2       |            story2            |
 |----|---------------------------|------------------------------|-----------------------|------------------------------|
 |  1 | bacodi:cavaliere-di-spade | bacodi:TuttelealtrestorieDue | bacodi:nove-di-denari | bacodi:TuttelealtrestorieDue |
@@ -373,11 +390,18 @@ where {
 }
 ```
 
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|   | cardDeck1 | story1 | cardDeck2 | story2 |
+|---|-----------|--------|-----------|--------|
+| 1 | bacodi:cavaliere-di-denari | bacodi:TuttelealtrestorieQuattro | bacodi:due-di-bastoni | bacodi:TuttelealtrestorieQuattro |
+| 2 | bacodi:cavaliere-di-spade | bacodi:storiaQuattro | bacodi:nove-di-denari | bacodi:storiaQuattro |
+| 3 | bacodi:cavaliere-di-spade | bacodi:storiaQuattro | bacodi:otto-di-coppe | bacodi:storiaQuattro |
+| 4 | bacodi:cavaliere-di-spade | bacodi:storiaQuattro | bacodi:sei-di-spade | bacodi:storiaQuattro |
+| 5 | bacodi:dieci-di-coppe | bacodi:TuttelealtrestorieDue | bacodi:asso-di-bastoni | bacodi:TuttelealtrestorieDue |
+| 6 | bacodi:dieci-di-denari | bacodi:TuttelealtrestorieSei | bacodi:nove-di-bastoni | bacodi:TuttelealtrestorieSei |
+| 7 | bacodi:fante-di-spade | bacodi:TuttelealtrestorieQuattro | bacodi:sei-di-coppe | bacodi:TuttelealtrestorieQuattro |
+| 8 | bacodi:due-di-spade | bacodi:TuttelealtrestorieSei | bacodi:otto-di-spade | bacodi:TuttelealtrestorieSei |
+| 9 | bacodi:il-diavolo | bacodi:TuttelealtrestorieCinque | bacodi:due-di-denari | bacodi:TuttelealtrestorieCinque |
+| 10 | bacodi:la-papessa | bacodi:TuttelealtrestorieCinque | bacodi:asso-di-coppe | bacodi:TuttelealtrestorieCinque |
 
 ## The iconographic dimension
 
@@ -385,7 +409,7 @@ There are a total of 118 iconographic depictions running along the edition's mar
 The three queries made for the iconographic dimension of the cards show that, as far as numerals and triumphs are concerned, the discrepancy between the number of big dimensions and small dimensions is little.
 Differently, the iconographic dimension of the court cards, and in particular those representing the protagonist, is almost always big with the exception of three occurrences in the sixth chapter Tutte le altre storie in which it is drawn on the page with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences, however, the three cards express something else than the presentation at the beginning of the story. In other words, the big size serves, initially, the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card, it can be either big or small in size. For example, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented with the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented with *Il Bagatto*, which serves to express the protagonist's desire to become emperor, and it has got a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist card, the big dimension indicates the importance of the protagonist as the main driving force of the narrative.
 
-### The protagonist
+### Protagonist's dimension
 
 What is the iconographic dimension of the protagonist?
 
@@ -414,7 +438,7 @@ where {
 |  9 | bacodi:fante-di-coppe       | bacodi:TuttelealtrestorieCinque | bacodi:grande  |   
 | 10 | bacodi:il-bagatto           | bacodi:TuttelealtrestorieCinque | bacodi:piccola |   
 
-### Big
+### Big dimension
 
 How many cards have a big iconographic dimension?
 
@@ -435,7 +459,7 @@ GROUP BY ?typology ORDER BY DESC (?n)
 | 2 | bacodi:numerale       | "16"^^xsd:integer |
 | 3 | bacodi:carta-di-corte | "14"^^xsd:integer |
 
-### Small
+### Small dimension
 
 How many cards have a small iconographic dimension?
 
@@ -480,20 +504,28 @@ HAVING (?n_stories XXX 1)
 ORDER BY DESC (?n_stories)
 ```
 
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|  | cardDeck | position | stories | n_stories |
+|--|----------|----------|---------|-----------|
+| 1 | bacodi:la-stella | "4"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieCinque https://purl.org/ebr/odi/data/storiaTre" | "2"^^xsd:integer |
+| 2 | bacodi:fante-di-bastoni | "7"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/storiaCinque" | "2"^^xsd:integer |
+| 3 | bacodi:il-matto | "11"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieUno" | "2"^^xsd:integer |
+| 4 | bacodi:la-giustizia | "5"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieSei" | "2"^^xsd:integer |
+| 5 | bacodi:la-luna | "10"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieUno" | "2"^^xsd:integer |
+| 6 | bacodi:lo-amore | "9"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieDue https://purl.org/ebr/odi/data/TuttelealtrestorieUno" | "2"^^xsd:integer |
+| 7 | bacodi:la-papessa | "3"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieSei https://purl.org/ebr/odi/data/storiaDue" | "2"^^xsd:integer |
+| 8 | bacodi:la-temperanza | "16"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieSei https://purl.org/ebr/odi/data/storiaDue" | "2"^^xsd:integer |
+| 9 | bacodi:dieci-di-coppe | "7"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaQuattro" | "2"^^xsd:integer |
+| 10 | bacodi:nove-di-coppe | "13"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaDue" | "2"^^xsd:integer |
+| 11 | bacodi:lo-amore | "6"^^xsd:integer | "https://purl.org/ebr/odi/data/storiaCinque https://purl.org/ebr/odi/data/storiaSei" | "2"^^xsd:integer |
 
 # Relationships between cards
 
-## "simple relations" and "complex relation"
+## "simple relations" and "complex relations"
 
 The direct relationships that each protagonist has with the other cards within each story have a minimal gap compared to the indirect ones: the former, in fact, number 83 compared to the total number of 71 for the latter.
 The last query provides one of the most interesting results at the narratological level: some properties, relating to narrative relationships, are used more frequently than others. By following the decreasing order of incidence of the various relations, it is possible to delineate a constant narrative sequence: a character (protagonist) comes across (odi:bumpsInto) another character at a certain place in the story - which is almost always the forest or the forest - (odi:movingThrough) and, once he receives something (odi:receives), he sets off to reach another place (odi:arrivesAt), in which the story will develop further. This narrative sequence is interesting to note an order in the way Calvino tells stories using tarot cards as signs.
 
-### Simple
+### Simple relations
 
 How many cards have a simple relationship with the protagonist?
 
@@ -508,13 +540,25 @@ where {
 }
 ```
 
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
+|   | representation1 | relation | representation2 |
+|---|-----------------|----------|-----------------|
+| 1 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | odi:bumpsInto | bacodi:la-forza-tuttelealtrestorieDue-brigante |
+| 2 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | odi:bumpsInto | bacodi:regina-di-spade-tuttelealtrestorieDue-guerriera |
+| 3 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | odi:movingThrough | bacodi:dieci-di-bastoni-tuttelealtrestorieDue-bosco |
+| 4 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | odi:discovers | bacodi:fante-di-bastoni-tuttelealtrestorieDue-brigante |
+| 5 | bacodi:re-di-coppe-storiaDue-protagonista | odi:bumpsInto | bacodi:il-bagatto-storiaDue-visitatore |
+| 6 | bacodi:re-di-coppe-storiaDue-protagonista | odi:receives | bacodi:cinque-di-coppe-storiaDue-discorso_anima_corpo |
+| 7 | bacodi:re-di-coppe-storiaDue-protagonista | odi:receives | bacodi:cinque-di-coppe-storiaDue-segreto_alchimistico |
+| 8 | bacodi:re-di-coppe-storiaDue-protagonista | odi:receives | bacodi:lo-imperatore-storiaDue-profezia |
+| 9 | bacodi:re-di-coppe-storiaDue-protagonista | odi:longsFor | bacodi:asso-di-coppe-storiaDue-fonte_della_vita |
+| 10 | bacodi:re-di-coppe-storiaDue-protagonista | odi:movingThrough | bacodi:otto-di-bastoni-storiaDue-bosco |
+| 11 | bacodi:re-di-coppe-storiaDue-protagonista | odi:sees | bacodi:sette-di-denari-storiaDue-denaro |
+| 12 | bacodi:re-di-coppe-storiaDue-protagonista | odi:discovers | bacodi:il-diavolo-storiaDue-visitatore |
+| 13 | bacodi:re-di-coppe-storiaDue-protagonista | odi:trades | bacodi:la-stella-storiaDue-anima |
+| 14 | bacodi:re-di-coppe-storiaDue-protagonista | odi:isHelpedBy | bacodi:la-papessa-storiaDue-strega |
+| 15 | bacodi:cavaliere-di-bastoni-storiaSei-protagonista | odi:bumpsInto | bacodi:il-bagatto-storiaSei-poeta |
 
-### Complex
+### Complex relations
 
 How many cards have a complex relationship with the protagonist?
 
@@ -528,16 +572,28 @@ where {
 
 
 ```
+|   | representation1 | representation2 |  
+|---|-----------------|-----------------|
+| 1 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:il-carro-tuttelealtrestorieDue-carro |  |
+| 2 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:cinque-di-denari-tuttelealtrestorieDue-luce_del_mattino |  |
+| 3 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:dieci-di-spade-tuttelealtrestorieDue-guerra |  |
+| 4 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:il-matto-tuttelealtrestorieDue-vagabondo |  |
+| 5 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:il-penduto-tuttelealtrestorieDue-brigante |  |
+| 6 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:il-sole-tuttelealtrestorieDue-sole |  |
+| 7 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:la-giustizia-tuttelealtrestorieDue-giustizia |  |
+| 8 | bacodi:regina-di-coppe-tuttelealtrestorieDue-protagonista | bacodi:tre-di-coppe-tuttelealtrestorieDue-bevuta_del_brigante |  |
+| 9 | bacodi:re-di-coppe-storiaDue-protagonista | bacodi:due-di-spade-storiaDue-guardie |  |
+| 10 | bacodi:re-di-coppe-storiaDue-protagonista | bacodi:nove-di-coppe-storiaDue-ricchezza |  |
+| 11 | bacodi:re-di-coppe-storiaDue-protagonista | bacodi:sei-di-denari-storiaDue-città_di_oro |  |
+| 12 | bacodi:re-di-coppe-storiaDue-protagonista | bacodi:la-temperanza-storiaDue-fanciulla |  |
+| 13 | bacodi:cavaliere-di-bastoni-storiaSei-protagonista | bacodi:asso-di-denari-storiaSei-luna |  |
+| 14 | bacodi:cavaliere-di-bastoni-storiaSei-protagonista | bacodi:dieci-di-coppe-storiaSei-deposito |  |
+| 15 | bacodi:cavaliere-di-bastoni-storiaSei-protagonista | bacodi:il-matto-storiaSei-orlando |  |
 
-|    |      cardDeck      |        class        |
-|----|--------------------|---------------------|
-|  1 | bacodi:il-bagatto  | odi:Character       |
-|  2 | bacodi:il-bagatto  | odi:Character       |
-|  3 | bacodi:il-bagatto  | odi:Character       |
 
-### ++Simple
+### ++ Simple relations
 
-What are the simple relationships that appear several times in the work?
+What are the simple relationships that appear most frequently in the collection?
 
 ```
 select ?relation (COUNT(?relation) as ?n)
