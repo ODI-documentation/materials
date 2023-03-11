@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
+@media only screen and (max-width: 768px) {
+  #intro-img {
+    display: none;
+    margin-top:1vw !important;
+  }
+}
+
 h1 {
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
     color:#006600;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     text-align: left;
     color:#006600;
 }
 
 .align-text-bottom {
-  font-family: 'Source Sans Pro', sans-serif; 
+  font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
   }
 
@@ -103,7 +110,7 @@ table {
   margin: 0 auto;
   overflow-x: auto;
   white-space: nowrap;
-  
+
 }
 
 td, th {padding:0.5vw; width:100%}
