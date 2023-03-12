@@ -178,6 +178,85 @@ div.card-header a {text-align:right}
   margin-right: auto;
 }
 
+.img_doc1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-bottom: 25px;
+  }
+
+.img_doc2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-bottom: 25px;
+  }
+
+.img_doc3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  }
+
+.img_caso1-descrizione {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+.img_caso1-legame {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+ .img_caso2-descrizione {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+ .img_caso2-legame {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+ .img_caso2-rel-compl {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+ .img_caso3-descrizione {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
+ .img_caso3-legame {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ overflow: auto;
+ margin-bottom: 25px;
+ }
+
 .card-text {font-size:0.9em}
 
 .card {border-radius: 10px !important;}
