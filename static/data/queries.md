@@ -518,7 +518,7 @@ ORDER BY DESC (?n_stories)
 | 10 | bacodi:nove-di-coppe | "13"^^xsd:integer | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaDue" | "2"^^xsd:integer |
 | 11 | bacodi:lo-amore | "6"^^xsd:integer | "https://purl.org/ebr/odi/data/storiaCinque https://purl.org/ebr/odi/data/storiaSei" | "2"^^xsd:integer |
 
-# Relationships between cards
+# Relations between cards
 
 ## "simple relations" and "complex relations"
 
@@ -527,7 +527,7 @@ The last query provides one of the most interesting results at the narratologica
 
 ### Simple relations
 
-How many cards have a simple relationship with the protagonist?
+How many cards have a simple relation with the protagonist?
 
 ```
 select ?representation1 ?relation ?representation2
@@ -560,7 +560,7 @@ where {
 
 ### Complex relations
 
-How many cards have a complex relationship with the protagonist?
+How many cards have a complex relation with the protagonist?
 
 ```
 select ?representation1 ?representation2
@@ -593,7 +593,7 @@ where {
 
 ### ++ Simple relations
 
-What are the simple relationships that appear most frequently in the collection?
+What are the simple relations that appear most frequently in the collection?
 
 ```
 select ?relation (COUNT(?relation) as ?n)
