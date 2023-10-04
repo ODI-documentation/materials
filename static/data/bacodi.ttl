@@ -820,7 +820,7 @@ bacodi:il-papa-tuttelealtrestorieTre a odi:StoryCard ;
     odi:specifies <https://w3id.org/odi/data/carte/il-papa> .
 
 bacodi:il-penduto-storiaCinque a odi:StoryCard ;
-    odi:carriesRepresentation bacodi:il-penduto-storiaCinque-armonia_interiore ;
+    odi:carriesRepresentation bacodi:il-penduto-storiaCinque-protagonista;
     odi:hasIconography bacodi:piccola ;
     odi:hasPositionInTheText 17 ;
     odi:hasTextualReference "«Lasciatemi così. Ho fatto tutto il giro e ho capito. Il mondo si legge all'incontrario. Tutto è chiaro.»"^^xsd:string ;
@@ -837,7 +837,7 @@ bacodi:il-penduto-storiaUno a odi:StoryCard ;
 bacodi:il-penduto-tuttelealtrestorieDue a odi:StoryCard ;
     odi:carriesRepresentation bacodi:il-penduto-tuttelealtrestorieDue-brigante ;
     odi:hasPositionInTheText 3 ;
-    odi:hasTextualReference "«un feroce brigante [...] appeso a uno strumento di tortura»"^^xsd:string ;
+    odi:hasTextualReference "«feroce brigante [...] appeso a uno strumento di tortura»"^^xsd:string ;
     odi:specifies <https://w3id.org/odi/data/carte/il-penduto> .
 
 bacodi:il-penduto-tuttelealtrestorieSei a odi:StoryCard ;
@@ -1807,9 +1807,6 @@ bacodi:tuttelealtrestorie a odi:Chapter ;
 <https://w3id.org/odi/data/significati/arcangelo> a odi:Meaning ;
     rdfs:label "Arcangelo"^^xsd:string .
 
-<https://w3id.org/odi/data/significati/armonia-interiore> a odi:Meaning ;
-    rdfs:label "Armonia interiore"^^xsd:string .
-
 <https://w3id.org/odi/data/significati/assenza-di-orlando> a odi:Meaning ;
     rdfs:label "Assenza di Orlando"^^xsd:string .
 
@@ -2525,8 +2522,8 @@ bacodi:il-papa-tuttelealtrestorieTre-papa a odi:Character ;
     odi:isRelatedWith bacodi:otto-di-denari-tuttelealtrestorieTre-montagna,
         bacodi:quattro-di-bastoni-tuttelealtrestorieTre-deserto .
 
-bacodi:il-penduto-storiaCinque-armonia_interiore a odi:Symbol ;
-    odi:hasMeaningOf <https://w3id.org/odi/data/significati/armonia-interiore> .
+bacodi:il-penduto-storiaCinque-protagonista a odi:Character ;
+    odi:hasMeaningOf <https://w3id.org/odi/data/significati/protagonista> .
 
 bacodi:il-sole-storiaCinque-bambino a odi:Character ;
     odi:hasMeaningOf <https://w3id.org/odi/data/significati/bambino> .
@@ -3751,7 +3748,7 @@ bacodi:re-di-spade-storiaCinque-protagonista a odi:Character ;
     odi:bumpsInto bacodi:il-sole-storiaCinque-bambino ;
     odi:changesIn bacodi:il-matto-storiaCinque-protagonista ;
     odi:discovers bacodi:lo-amore-storiaCinque-amore_angelica_e_medoro ;
-    odi:hasAParticularConditionOf bacodi:il-penduto-storiaCinque-armonia_interiore,
+    odi:changesIn bacodi:il-penduto-storiaCinque-protagonista,
         bacodi:tre-di-coppe-storiaCinque-ampolla ;
     odi:hasIndirectRelationWith bacodi:cinque-di-bastoni-storiaCinque-schianto_dei_tronchi,
         bacodi:cinque-di-denari-storiaCinque-spreco,

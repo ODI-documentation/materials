@@ -266,7 +266,7 @@ ORDER BY DESC (?n_stories)
 |  9 | bacodi:nove-di-coppe   | bacodi:banchetto          | "https://purl.org/ebr/odi/data/TuttelealtrestorieUno https://purl.org/ebr/odi/data/storiaSei"                |  "2"^^xsd:integer    |
 | 10 | bacodi:il-sole         | bacodi:bambino            | "https://purl.org/ebr/odi/data/storiaCinque https://purl.org/ebr/odi/data/storiaUno"                |  "2"^^xsd:integer    |   
 
-## Use different cards for the same representation in the same story
+## Using different cards for the same representation in the same story
 
 Two cards may have a semantic link to express an identity (odi:sameAs) or an evolution of the same representation (odi:changesIn).  
 The results of the two queries reveal six occurrences where two cards are used to represent the same entity within a story and ten occurrences where two cards are used to represent an evolution of the same entity within a story.
