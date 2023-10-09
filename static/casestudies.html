@@ -3,19 +3,19 @@
 
   <div class="cs-intro pb-5">
     <h1>Case studies</h1>
-    <p>Here three case studies are shown. The first two concern the first and second stories of the first six titled (<i>Storia dell'ingrato punito</i> and <i>Storia dell'alchimista che vendette l'anima</i>); the last case study concerns some cards of the sixth, and last, story enclosed within the last chapter of the collection, <i>Tutte le altre storie</i>.</p>
+    <p>Here three case studies are shown. The first two relate to the first and second titled stories (<i>Storia dell'ingrato punito</i> and <i>Storia dell'alchimista che vendette l'anima</i>); the last case study concerns some cards of the sixth, and last, story enclosed within the last chapter of the collection, <i>Tutte le altre storie</i>.</p>
 
     <h2>Case study 1: some cards from <i>Storia dell'ingrato punito</i></h2>
-    <p>The protagonist of <i>Storia dell'ingrato punito</i> (<i>Cavaliere di Coppe</i>) arranges 17 tarot cards gradually. Briefly, the story tells about a knight who is robbed and hanged from a tree (<i>Il Penduto</i>) branch by a brigand (<i>La Forza</i>) but subsequently rescued by a maiden (<i>La Temperanza</i>). The said maiden, in turn, resolves to avenge the knight when he forsakes her to wed a woman of greater affluence (<i>L'Imperatrice</i>). Finally, the knight meets his demise (<i>Otto di Spade</i>) at the hands of Cybele (<i>La Papessa</i>) and her adherents.</p>
-    <p>In BACODI the <i>Cavaliere di Coppe</i> (<code>odi:StoryCard</code>) is represented in relation to the tarot deck (<code>odi:TarotDeck</code>) and the story (<code>odi:Story</code>). In the first case, it is an artefact belonging to the tarot deck (<code>odi:TarotCard</code>) and thus it is described through its main characteristics (e.g. the <i>Cavaliere di Coppe</i>is a "court card" (<code>odi:Typology</code>) and its suit is "cups" (<code>odi:hasSuit</code>, <code>odi:Suit</code>)). In the second case, as narrative istance (<code>odi:StoryCard</code>), it represents a character (<code>odi:Character</code>) with a specific meaning (the protagonist, <code>odi:Meaning</code>).</p>
+    <p>The main character of <i>Storia dell'ingrato punito</i> (<i>Cavaliere di Coppe</i>) arranges 17 tarot cards gradually. Briefly, the story tells about a knight who is robbed and hanged from a tree (<i>Il Penduto</i>) branch by a brigand (<i>La Forza</i>) but subsequently rescued by a maiden (<i>La Temperanza</i>). The said maiden, in turn, resolves to avenge the knight when he forsakes her to wed a woman of greater affluence (<i>L'Imperatrice</i>). Finally, the knight meets his demise (<i>Otto di Spade</i>) at the hands of Cybele (<i>La Papessa</i>) and her adherents.</p>
+    <p>In BACODI the <i>Cavaliere di Coppe</i> (<code>odi:StoryCard</code>) is represented in relation to the tarot deck (<code>odi:TarotDeck</code>) and the story (<code>odi:Story</code>). In the first case, it is an artefact belonging to the tarot deck (<code>odi:TarotCard</code>) and thus it is described through its main characteristics (e.g. the <i>Cavaliere di Coppe</i> is a "court card" (<code>odi:Typology</code>) and its suit is "cups" (<code>odi:hasSuit</code>, <code>odi:Suit</code>)). In the second case, as narrative instance (<code>odi:StoryCard</code>), it represents a character (<code>odi:Character</code>) with a specific meaning (the main character, <code>odi:Meaning</code>).</p>
     
     <img class="img_caso1-descrizione" src="static/img/ontologia-descrizione-carte-specifica1.png" alt="Cavaliere-di-coppe" style="width: 800px" style="height: 800px">
 
-    <p>The <i>Storia dell'ingrato punito</i> is an example of how two cards can be used to represent an evolution of the same representation: the changing of the protagonist from a wealthy condition to a condition of poverty is expressed by a change (<code>odi:changesIn</code>) of cards: from <i>Cavaliere di Coppe</i> to <i>Il Penduto</i>.</p>
+    <p>In <i>Storia dell'ingrato punito</i> there's a clear example of how a card is used to express an evolution of the same representation expressed before with another card: the changing of the main character from a wealthy condition to a poverty condition is expressed by a change (<code>odi:changesIn</code>) of cards: from <i>Cavaliere di Coppe</i> to <i>Il Penduto</i>.</p>
 
     <img class="img_caso1-legame" src="static/img/ontologia-Legame-specifica1.png" alt="Penduto_Cavaliere-di-Coppe" style="width: 700px" style="height: 700px">
     
-    <p>In BACODI this changing of the character is expressed as below.</p>
+    <p>In BACODI this change of status is expressed as below.</p>
 
       <div class="m-3">
         <pre><code>
@@ -25,12 +25,12 @@
       </div>
 
     <h2>Case study 2: some cards from <i>Storia dell'alchimista che vendette l'anima</i></h2>
-    <p>The protagonist of <i>Storia dell'alchimista che vendette l'anima</i> (<i>Re di Coppe</i>) fits perpendicularly to the first story and takes the <i>Asso di Coppe</i> and <i>La Papessa</i> as its point of agreement. The story tells about an alchemist (<i>Re di Coppe</i>) who, during his search for the source of life, encounters a witch (<i>La Papessa</i>) who predicts his future. The alchemist comes across a visitor (<i>Il Bagatto</i>) who turns out to be the devil (<i>Il Diavolo</i>). He promises the alchemist a city of gold in exchange for the souls of all the city's inhabitants. The alchemist agrees and gears are set in motion (<i>La Ruota della Fortuna</i>) for the transformation into gold of the whole city (<i>Nove di Coppe</i>, <i>Sei di Denari</i>). Armed guards bar the entrance to anyone who wants to enter, including a nymph (<i>La Temperanza</i>).</p>
-    <p>Even in this case, the <i>Re di Coppe</i> (<code>odi:StoryCard</code>) is described as an artefact of the tarot deck (<code>odi:TarotDeck</code>) and  as the protagonist (<code>odi:Meaning</code>) of the story (<code>odi:Story</code>). In both cases, the card has got several same characteristics as the <i>Cavaliere di Coppe</i> of the previous case study.
+    <p>The main character of <i>Storia dell'alchimista che vendette l'anima</i> (<i>Re di Coppe</i>) fits perpendicularly to the first story and takes the <i>Asso di Coppe</i> and <i>La Papessa</i> as meeting points. The story tells about an alchemist (<i>Re di Coppe</i>) who, during his search for the source of life, encounters a witch (<i>La Papessa</i>) who predicts his future. The alchemist comes across a visitor (<i>Il Bagatto</i>) who turns out to be the devil (<i>Il Diavolo</i>). He promises the alchemist a city of gold in exchange for the souls of all the city's inhabitants. The alchemist agrees and gears are set in motion (<i>La Ruota della Fortuna</i>) for the transformation into gold of the whole city (<i>Nove di Coppe</i>, <i>Sei di Denari</i>). Armed guards bar the entrance to anyone who wants to enter, including a nymph (<i>La Temperanza</i>).</p>
+    <p>Even in this case, the <i>Re di Coppe</i> (<code>odi:StoryCard</code>) is described both as an artefact inside of the tarot deck (<code>odi:TarotDeck</code>) and as the main character (<code>odi:Meaning</code>) of the story (<code>odi:Story</code>). The card has got in either case several same characteristics as the <i>Cavaliere di Coppe</i> of the previous case study.
     
     <img class="img_caso2-descrizione" src="static/img/ontologia-descrizione-carte-specifica2.png" alt="Re-di-coppe" style="width: 800px" style="height: 800px">
 
-    In this case, is shown the relationships between the <i>Re di Coppe</i> and <i>Il Bagatto</i> (<code>odi:bumpsInto</code>), as an example of narrative relations between the protagonist and its cards, then the semantic link between <i>Il Bagatto</i> and <i>Il Diavolo</i> (<code>odi:sameAs</code>) to represent the identity of representation</p>.
+    The relation between the <i>Re di Coppe</i> and <i>Il Bagatto</i> (<code>odi:bumpsInto</code>) is shown below as an example of narrative relation between the main character and another card in the same story. Then, it is provided also the representation of the semantic link between <i>Il Bagatto</i> and <i>Il Diavolo</i> (<code>odi:sameAs</code>) to express the identity of representation</p>.
   
     <img class="img_caso2-legame" src="static/img/ontologia-Legame+Relazione-specifica2.png" alt="Bagatto_Diavolo" style="width: 900px" style="height: 900px">
 
@@ -51,10 +51,10 @@
         </code></pre>
       </div>
 
-    <p>In each story of the collection, cards can have "simple relations", direct relationships, or "complex relations"(<code>odi:hasComplexRelationWith</code>), indirect relationships. As far "complex relations" are concerned, cards that have a direct relationship with the protagonist can either be specified (<code>odi:isSpecifiedBy</code>) or have a general relationship (<code>odi:isRelatedWith</code>) with the card that has got an indirect relationship with the protagonist.
-    In <i>Storia dell'alchimista che vendette l'anima</i> the moment of the city’s transformation into gold is a clear example of how two cards have a "complex relationships" with the protagonist. The event involves three cards: <i>La Ruota della Fortuna</i>, the <i>Nove di Coppe</i> and the <i>Sei di Denari</i>. <i>La Ruota della Fortuna</i> has got a direct relationship with the main character (<code>odi:carriedOutBy</code>), whereas the numerals <i>Nove di Coppe</i> and the <i>Sei di Denari</i> has got an indirect relationship with the protagonist and they are used to specify (<code>odi:isSpecifiedWith</code>) the event represented by the triumph.</p>
+    <p>In each story of the collection, cards can have "simple relations", direct relations, or "complex relations"(<code>odi:hasComplexRelationWith</code>), indirect relations. Regarding "complex relations" cards that have a direct relation with the main character can either be specified (<code>odi:isSpecifiedBy</code>) or have a general relation (<code>odi:isRelatedWith</code>) with the card that has got an indirect relation with the main character.
+    In <i>Storia dell'alchimista che vendette l'anima</i> the moment of the city’s transformation into gold is a clear example of how two cards may have a "complex relation" with the main character. The event involves three cards: <i>La Ruota della Fortuna</i>, the <i>Nove di Coppe</i> and the <i>Sei di Denari</i>. <i>La Ruota della Fortuna</i> has got a direct relation with the main character (<code>odi:carriedOutBy</code>), whereas the numerals <i>Nove di Coppe</i> and the <i>Sei di Denari</i> has got an indirect relation with the main character and they are used to specify (<code>odi:isSpecifiedWith</code>) the event represented by the triumph.</p>
 
-    <p>In BACODI, the "simple relationships" between the protagonist and the event is expressed as below.</p>
+    <p>In BACODI, the "simple relation" between the main character and the event is expressed as below.</p>
 
     <div class="m-3">
       <pre><code>
@@ -63,7 +63,7 @@
       </code></pre>
     </div>
 
-    <p>Otherwise, the "complex relationships" between the <i>Nove di Coppe</i> and the protagonist are expressed as below. 
+    <p>Otherwise, the "complex relation" between the <i>Nove di Coppe</i> and the main character are expressed as below. 
 
     <div class="m-3">
       <pre><code>
@@ -76,17 +76,17 @@
     <img class="img_caso2-rel-compl" src="static/img/ontologia-Relazione-complessa-specifica2a.png" alt="Nove-di-Coppe_Ruota-della-fortuna" style="width: 700px" style="height: 700px">
 
     <h2>Case study 3: some cards from the last story of <i>Tutte le altre storie</i></h2>
-    <p>This last story of the collection tells about a boarder (<i>Regina di Bastoni</i>) who challenges a warlord (<i>Cavaliere di Spade</i>) to a duel. She becomes a swordswoman (<i>La Giustizia</i>) and the warlord falls in love with her. The wedding is celebrated. As soon as the groom turns away, the in-laws decide to pay a banjo to kill the bride. The scherano rushes at the bride (<i>La Forza</i>), but the latter finds himself tied upside down, defeated by the woman. In the guise of a hostess (<i>La Temperanza</i>), the protagonist awaits the return of the groom (<i>La Temperanza</i>) and sets a table for two.</p>
-    <p>Even in this case, the <i>Regina di Bastoni</i> is a court card of the tarot deck (<code>odi:TarotDeck</code>) and it has got characteristics related to its presence in the deck. In addition, the card is a narrative istance of the story </p>(<code>odi:StoryCard</code>) as character (<code>odi:Character</code>) which has got the role of protagonist (<code>odi:Meaning</code>) of the story (<code>odi:Story</code>). 
+    <p>This last story of the collection tells about a boarder (<i>Regina di Bastoni</i>) who challenges a warlord (<i>Cavaliere di Spade</i>) to a duel. She becomes a swordswoman (<i>La Giustizia</i>) and the warlord falls in love with her. The wedding is celebrated. As soon as the groom turns away, the in-laws decide to pay a banjo to kill the bride. The scherano rushes at the bride (<i>La Forza</i>), but the latter finds himself tied upside down, defeated by the woman. In the guise of a hostess (<i>La Temperanza</i>), the main character awaits the return of the groom (<i>La Temperanza</i>) and sets a table for two.</p>
+    <p>Even in this case, the <i>Regina di Bastoni</i> is a court card of the tarot deck (<code>odi:TarotDeck</code>) and it has got characteristics related to its belonging to the tarot deck. The card is also a narrative instance of the story </p>(<code>odi:StoryCard</code>) as character (<code>odi:Character</code>) which has got the role of main character (<code>odi:Meaning</code>) of the story (<code>odi:Story</code>). 
 
      <img class="img_caso3-descrizione" src="static/img/ontologia-descrizione-carte-specifica3.png" alt="Regina-di-bastoni" style="width: 800px" style="height: 800px">
 
-    <p>It is noteworthy that there are other two cards representing the protagonist: <i>La Giustizia</i> and <i>La Temperanza</i>. In the former there is a change of character (<code>odi:changesIn</code>), while in the latter an identity (<code>odi:sameAs</code>).
-    Therefore, <i>La Temperanza</i> who saves the protagonist of the first story, now is the protagonist</p>.
+    <p>The use of other two cards (<i>La Giustizia</i> and <i>La Temperanza</i>) to represent the main character is noteworthy. In the former the card expresses a change of the character during the story (<code>odi:changesIn</code>), while in the latter the card expresses an identity of the character (<code>odi:sameAs</code>).
+    Therefore <i>La Temperanza</i>, who saves the main character of the first story, now is the main character</p>.
     
     <img class="img_caso3-legame" src="static/img/ontologia-Legame-specifica3.png" alt="Regina-di-bastoni_Temperanza-Giustizia" style="width: 800px" style="height: 800px">
 
-    <p>In BACODI, the semantic link between the <i>Regina di Bastoni</i> and the two triumphs <i>La Temperanza</i> and <i>La Giustizia</i> are formal described as below</p>
+    <p>In BACODI, the semantic links between the <i>Regina di Bastoni</i> and the two triumphs, <i>La Temperanza</i> and <i>La Giustizia</i>, are formal described as below</p>
 
     <div class="m-3">
       <pre><code>

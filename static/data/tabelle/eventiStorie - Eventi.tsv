@@ -1,0 +1,23 @@
+odi:Event	odi:carriedOutBy	odi:implies
+asso-di-coppe-storiaUno-bevuta_del_protagonista	il-penduto-storiaUno-protagonista@la-temperanza-storiaUno-fanciulla	
+due-di-coppe-storiaUno-incontro_di_amore	cavaliere-di-coppe-storiaUno-protagonista@la-temperanza-storiaUno-fanciulla	
+otto-di-coppe-storiaUno-banchetto_di_nozze	cavaliere-di-coppe-storiaUno-protagonista@la-imperatrice-storiaUno-sposa	
+cavaliere-di-spade-storiaUno-imprevisto	cavaliere-di-coppe-storiaUno-protagonista@il-sole-storiaUno-bambino	
+due-di-spade-storiaUno-duello	cavaliere-di-coppe-storiaUno-protagonista@la-giustizia-storiaUno-fanciulla	
+due-di-denari-storiaDue-baratto	re-di-coppe-storiaDue-protagonista@il-bagatto-storiaDue-visitatore	sette-di-denari-storiaDue-denaro@la-stella-storiaDue-anima
+cinque-di-coppe-storiaDue-brindisi_del_patto	re-di-coppe-storiaDue-protagonista@il-diavolo-storiaDue-visitatore	
+cinque-di-coppe-storiaDue-rintocchi_delle_campane	re-di-coppe-storiaDue-protagonista@il-diavolo-storiaDue-visitatore	
+ruota-della-fortuna-storiaDue-la_trasformazione_di_tutto_in_oro	re-di-coppe-storiaDue-protagonista	
+due-di-bastoni-storiaTre-necessità_di_una_scelta	fante-di-spade-storiaTre-protagonista@regina-di-spade-storiaTre-fanciulla	otto-di-denari-storiaTre-denaro@sei-di-coppe-storiaTre-banchetto
+sei-di-coppe-storiaTre-incontro_di_amore	fante-di-spade-storiaTre-protagonista@regina-di-spade-storiaTre-fanciulla	
+nove-di-bastoni-storiaQuattro-caduta_tra_rami_spezzati	fante-di-denari-storiaQuattro-protagonista	
+dieci-di-spade-storiaCinque-storia_di_orlando	re-di-spade-storiaCinque-protagonista	
+il-carro-storiaCinque-angelica_si_muove	regina-di-spade-storiaCinque-angelica	
+la-forza-storiaCinque-violenza	re-di-spade-storiaCinque-protagonista	
+cinque-di-bastoni-storiaCinque-schianto_dei_tronchi	re-di-spade-storiaCinque-protagonista	
+cinque-di-denari-storiaCinque-spreco	re-di-spade-storiaCinque-protagonista	
+la-giustizia-storiaCinque-cavalieri	re-di-spade-storiaCinque-protagonista	
+asso-di-spade-storiaSei-assenza_di_orlando	cavaliere-di-bastoni-storiaSei-protagonista	
+nove-di-coppe-storiaSei-banchetto	cavaliere-di-bastoni-storiaSei-protagonista@lo-imperatore-storiaSei-carlo_magno	
+la-torre-storiaSei-caduta_dei_cadaveri		il-mondo-storiaSei-parigi
+il-carro-storiaSei-astolfo_si_muove	cavaliere-di-bastoni-storiaSei-protagonista	

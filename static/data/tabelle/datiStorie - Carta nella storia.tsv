@@ -1,0 +1,105 @@
+odi:StoryCard	odi:specifies	odi:hasVariantName	odi:hasPositionInTheText	odi:hasIconography	odi:carriesRepresentation	odi:hasMeaningOf	rdf:istanceOf	odi:represents	odi:istanceOf2	odi:hasTextualReference
+cavaliere-di-coppe-storiaUno	cavaliere-di-coppe		1	Grande	cavaliere-di-coppe-storiaUno-protagonista	Protagonista	Character			«un giovane roseo e biondo che sfoggiava un mantello raggiante di ricami a forma di sole, [...] mosso [...] più dal desiderio d'apparire che da una vera vocazione cavalleresca.»
+re-di-denari-storiaUno	re-di-denari		2	Piccola	re-di-denari-storiaUno-padre	Padre 	Character			«un personaggio leggermente più anziano degli altri e dall'aspetto posato e prospero»
+dieci-di-denari-storiaUno	dieci-di-denari		3	Piccola	dieci-di-denari-storiaUno-eredità	Eredità 	InanimateObject			«cospicua eredità»@«borsa colma di monete d'oro» 
+nove-di-bastoni-storiaUno	nove-di-bastoni		4	Piccola	nove-di-bastoni-storiaUno-bosco	Bosco	FinctionalPlace			«ci ricordava il bosco...»@«[...] il segmento verticale che incrocia gli altri legni obliqui suggeriva appunto l'idea della strada che penetra nel folto della foresta.»
+la-forza-storiaUno	la-forza		5	Grande	la-forza-storiaUno-brigante	Brigante	Character			«un energumeno armato»@«feroce brigante»
+il-penduto-storiaUno	il-penduto		6	Grande	il-penduto-storiaUno-protagonista	Protagonista	Character			«il nostro giovane biondo spogliato d'ogni avere, e lasciato a penzolare da un ramo, a testa in giù.»
+la-temperanza-storiaUno	la-temperanza		7	Grande	la-temperanza-storiaUno-fanciulla	Fanciulla	Character			«semplice figlia dei boschi»@«forse figlia d'un boscaiolo o d'un capraio, che avanzava [...] reggendo due brocche d'acqua, certo di ritorno dalla fonte.»
+asso-di-coppe-storiaUno	asso-di-coppe		8	Grande	asso-di-coppe-storiaUno-bevuta_del_protagonista	Bevuta del protagonista	Event			«fu come se sentissimo lì vicino il fiottare d'una sorgente e l'ansare dell'uomo che si dissetava bocconi.»
+due-di-coppe-storiaUno	due-di-coppe		9	Grande	due-di-coppe-storiaUno-incontro_di_amore	Incontro d'amore	Event			«incontro amoroso»@«idillio boschivo»
+sette-di-bastoni-storiaUno	sette-di-bastoni		10	Piccola	sette-di-bastoni-storiaUno-bosco	Bosco	FinctionalPlace			«dove tra gli scuri tronchi della foresta pareva di veder allontanarsi la sua ombra sottile.»
+la-imperatrice-storiaUno	la-imperatrice		11	Grande	la-imperatrice-storiaUno-sposa	Sposa	Character			«una sposa d'alto e dovizioso lignaggio [...] col suo scudo di famiglia e la sua faccia insipida...»
+otto-di-coppe-storiaUno	otto-di-coppe		12	Grande	otto-di-coppe-storiaUno-banchetto_di_nozze	Banchetto di nozze	Event			«banchetto di nozze con due file di convitati che brindavano ai due sposi [...].» 
+cavaliere-di-spade-storiaUno	cavaliere-di-spade		13	Grande	cavaliere-di-spade-storiaUno-imprevisto	Imprevisto	Event			«o un messaggero a cavallo aveva fatto irruzione nella festa portando una notizia inquietante, o lo sposo in persona aveva abbandonato il banchetto [...], o forse le due cose insieme: lo sposo era stato avvertito di un'apparizione imprevista e subito aveva imbracciato le armi ed era saltato in sella.» 
+il-sole-storiaUno	il-sole		14	Grande	il-sole-storiaUno-bambino	Bambino	Character			«un bambino seminudo era stato visto correre [...]» sventolando il mantello del protagonista
+la-giustizia-storiaUno	la-giustizia		15	Grande	la-giustizia-storiaUno-fanciulla	Fanciulla	Character			«la sua salvatrice del bosco, fatta più piena e risoluta e calma, con un melanconico sorriso [...].»@«spadaccina agguerita» 
+due-di-spade-storiaUno	due-di-spade		16	Grande	due-di-spade-storiaUno-duello	Duello	Event			«Volavano tagliuzzate le foglie del bosco e le piante rampicanti s'attorcigliavano alle lame.» 
+la-papessa-storiaUno	la-papessa		17		la-papessa-storiaUno-cibele	Cibele	Character			«misteriosa figura monacale incoronata»
+otto-di-spade-storiaUno	otto-di-spade		18		otto-di-spade-storiaUno-lame	Lame	InanimateObject			«le lame taglienti delle scarmigliate seguaci di Cibele s'avventavano addosso a lui, straziandolo.»
+re-di-coppe-storiaDue	re-di-coppe		1	Grande	re-di-coppe-storiaDue-protagonista	Protagonista	Character			«uno di quei sapienti [...] che tentano di strappare alla natura i suoi segreti, particolarmente quello della trasformazione dei metalli.»@«il dottor Faust»
+asso-di-coppe-storiaDue	asso-di-coppe		2	Grande	asso-di-coppe-storiaDue-fonte_della_vita	Fonte della vita	InanimateObject			«la Fonte della Vita, il punto supremo della ricerca dell'alchimista»
+la-papessa-storiaDue	la-papessa		3	Grande	la-papessa-storiaDue-strega	Strega	Character			Una delle donne «dedite alle arti della stregoneria e della divinazione del futuro»
+otto-di-bastoni-storiaDue	otto-di-bastoni		4		otto-di-bastoni-storiaDue-bosco	Bosco	FinctionalPlace			
+lo-imperatore-storiaDue	lo-imperatore		5	Grande	lo-imperatore-storiaDue-profezia	Profezia	InanimateObject			«Tu diventerai l'uomo più potente del mondo.»
+il-bagatto-storiaDue	il-bagatto		6	Grande	il-bagatto-storiaDue-visitatore	Visitatore	Character			«un ciarlatano o mago intento ai suoi esercizi.»
+sette-di-denari-storiaDue	sette-di-denari		7	Grande	sette-di-denari-storiaDue-denaro	Denaro	InanimateObject			«lo splendore di tutte le miniere dell'Oriente spalancate davanti a lui.»
+due-di-denari-storiaDue	due-di-denari		8	Grande	due-di-denari-storiaDue-baratto	Baratto	Event			«segno di uno scambio [...], d'una compravendita, un baratto.»
+il-diavolo-storiaDue	il-diavolo		9		il-diavolo-storiaDue-visitatore	Visitatore	Character			«egli aveva riconosciuto nel ciarlatano il vecchio principe d'ogni mescolanza e ambiguità»@Mefistofele
+la-stella-storiaDue	la-stella		10	Grande	la-stella-storiaDue-anima	Anima	InanimateObject			
+cinque-di-coppe-storiaDue	cinque-di-coppe		11	Grande	cinque-di-coppe-storiaDue-segreto_alchimistico	Segreto	InanimateObject			Il segreto alchimistico
+cinque-di-coppe-storiaDue	cinque-di-coppe		11	Grande	cinque-di-coppe-storiaDue-brindisi_del_patto	Brindisi	Event			Un brindisi del patto
+cinque-di-coppe-storiaDue	cinque-di-coppe		11	Grande	cinque-di-coppe-storiaDue-rintocchi_delle_campane	Rintocchi	Event			I rintocchi delle campane
+cinque-di-coppe-storiaDue	cinque-di-coppe		11	Grande	cinque-di-coppe-storiaDue-discorso_anima_corpo	Discorso	InanimateObject			Un discorso sull'anima e il corpo
+la-ruota-della-fortuna-storiaDue	la-ruota-della-fortuna		12	Grande	la-ruota-della-fortuna-storiaDue-la_trasformazione_di_tutto_in_oro	La trasformazione di tutto in oro	Event			«[...] Gran Mulino dell'Oro, il meccanismo gigantesco che avrebbe innalzato la Metropoli Tutta Quanta di Metallo Prezioso [...].»
+nove-di-coppe-storiaDue	nove-di-coppe		13		nove-di-coppe-storiaDue-ricchezza	Ricchezza	Symbol			«Regno dell'Abbondanza»
+sei-di-denari-storiaDue	sei-di-denari		14		sei-di-denari-storiaDue-città_di_oro	Città dell'Oro	FinctionalPlace			«forse [...] le cupole splendenti di grattacieli d'oro che fiancheggiavano le vie della Metropoli.»
+due-di-spade-storiaDue	due-di-spade		15	Piccola	due-di-spade-storiaDue-guardie	Guardie	Character			«guardie armate sbarravano il passo a chiunque volesse entrare [...].» 
+la-temperanza-storiaDue	la-temperanza		16	Piccola	la-temperanza-storiaDue-fanciulla	Fanciulla	Character			«una semplice fanciulla»@«Era una ninfa acquatica? Era una regina degli elfi dell'aria? Un angelo del fuoco liquido al centro della Terra?»
+fante-di-spade-storiaTre	fante-di-spade		1	Grande	fante-di-spade-storiaTre-protagonista	Protagonista	Character			«un guerriero dallo sguardo melanconico»@«un soldato smarritosi nel bosco»
+sei-di-bastoni-storiaTre	sei-di-bastoni		2		sei-di-bastoni-storiaTre-bosco	Radura nel bosco	FinctionalPlace			«una radura tra gli alberi»
+sette-di-denari-storiaTre	sette-di-denari		3		sette-di-denari-storiaTre-luccichìo	Luccichìo	InanimateObject			«un luccichìo come di fuochi fatui»
+la-stella-storiaTre	la-stella		4	Grande	la-stella-storiaTre-fanciulla	Fanciulla	Character			«una giovinetta di sidereo pallore che s'aggirava nella notte in camicia e coi capelli sciolti, levando alto un cero acceso.»
+sette-di-spade-storiaTre	sette-di-spade		5	Grande	sette-di-spade-storiaTre-armatura	Armatura	InanimateObject			«Nobile cavaliere, ti supplico, spogliati delle tue armi e della tua corazza, e lascia che io le indossi!»
+regina-di-spade-storiaTre	regina-di-spade		6	Grande	regina-di-spade-storiaTre-fanciulla	Fanciulla	Character			«ecco la meschinella trasformarsi in regina da torneo, pavoneggiarsi, far la gatta.»
+due-di-bastoni-storiaTre	due-di-bastoni		7		due-di-bastoni-storiaTre-necessità_di_una_scelta	Necessità di una scelta	Event			«il segnale d'un bivio, d'una scelta?»
+otto-di-denari-storiaTre	otto-di-denari		8		otto-di-denari-storiaTre-denaro	Denaro	InanimateObject			«un tesoro nascosto?»
+sei-di-coppe-storiaTre	sei-di-coppe		9		sei-di-coppe-storiaTre-incontro_di_amore	Incontro d'amore	Event			«un convito amoroso?»
+quattro-di-denari-storiaTre	quattro-di-denari		10		quattro-di-denari-storiaTre-beatitudine	Beatitudine	Symbol			«Mi sembrò d'entrare in Paradiso...»
+il-papa-storiaTre	il-papa		11		il-papa-storiaTre-papa	Papa	Character			«un Papa dall'austera barba bianca, come il primo dei pontefici ora custode della Porta del Cielo.»
+la-morte-storiaTre	la-morte		12		la-morte-storiaTre-fanciulla	Fanciulla	Character			«[...] una barriera di denti senza gengive né labbra, due narici scavate nell'osso, i gialli zigomi d'un teschio, [...] le membra stecchite d'un cadavere.»
+dieci-di-spade-storiaTre	dieci-di-spade		13		dieci-di-spade-storiaTre-barriera	Barriera degli arcangeli	Character			«era barriera degli arcangeli che vietava l'accesso al cielo dell'anima dannata?»
+cinque-di-bastoni-storiaTre	cinque-di-bastoni		14		cinque-di-bastoni-storiaTre-bosco	Bosco	FinctionalPlace			«annunciava un passo attraverso il bosco?»
+il-diavolo-storiaTre	il-diavolo		15	Grande	il-diavolo-storiaTre-diavolo	Diavolo	Character			«Belzebù in persona»
+due-di-denari-storiaTre	due-di-denari		16		due-di-denari-storiaTre-soldi	Soldi	InanimateObject			«due soldi»
+quattro-di-spade-storiaTre	quattro-di-spade		17		quattro-di-spade-storiaTre-armatura	Armatura	InanimateObject			«tutte le armi e armature»
+fante-di-denari-storiaQuattro	fante-di-denari		1	Grande	fante-di-denari-storiaQuattro-protagonista	Protagonista	Character			«Se questo giovane era davvero un ladro di tombe, egli doveva andar cercando nei cimiteri i sepolcri più illustri»
+la-morte-storiaQuattro	la-morte		2	Grande	la-morte-storiaQuattro-cimitero	Cimitero	FinctionalPlace			«macabro regno degli scheletri»
+il-papa-storiaQuattro	il-papa		3	Grande	il-papa-storiaQuattro-tomba_di_un_papa	La tomba di un papa	FinctionalPlace			«la tomba d'un Papa»
+otto-di-denari-storiaQuattro	otto-di-denari		4		otto-di-denari-storiaQuattro-ricchezza	Ricchezza	Symbol			«[...] i pontefici scendono nel sepolcro in tutto lo splendore dei loro arredi.»
+due-di-bastoni-storiaQuattro	due-di-bastoni		5	Grande	due-di-bastoni-storiaQuattro-due_bastoni	Due bastoni	InanimateObject			«Il ladro [...] doveva aver sollevato il pesante coperchio della tomba facendo leva su Due Bastoni [...].»
+asso-di-bastoni-storiaQuattro	asso-di-bastoni		6		asso-di-bastoni-storiaQuattro-tronco	Tronco	InanimateObject			«tronco d'albero diritto e altissimo» 
+dieci-di-coppe-storiaQuattro	dieci-di-coppe		7		dieci-di-coppe-storiaQuattro-avelli_del_cimitero	Avelli del cimitero	InanimateObject			«la vista dall'alto del cimitero, come lui lo contemplava d'in cima alla pianta, con tutti gli avelli allineati sui loro piedistalli lungo i viali.» 
+il-giudizio-storiaQuattro	il-giudizio	L'Angelo	8	Grande	il-giudizio-storiaQuattro-giudizio_nel_gran_giorno	Giudizio nel Gran Giorno	Symbol			«guardava le tombe dall'alto come gli abitanti del cielo nel Gran Giorno.»
+il-mondo-storiaQuattro	il-mondo		9		il-mondo-storiaQuattro-città	Città del Tutto e delle Parti	FinctionalPlace			«città sospesa»@«città galleggiante su onde o nuvole, e sollevata da due putti alati.» @«Città del Possibile»@«Città del Tutto e delle Parti»
+la-torre-storiaQuattro	la-torre		10		la-torre-storiaQuattro-i_tetti_della_città	I tetti della città	InanimateObject			La città aveva i tetti che «toccavano la volta del cielo»
+nove-di-denari-storiaQuattro	nove-di-denari		11		nove-di-denari-storiaQuattro-ricchezza	Ricchezza	Symbol			
+sei-di-spade-storiaQuattro	sei-di-spade		12		sei-di-spade-storiaQuattro-forza	Forza	Symbol			
+otto-di-coppe-storiaQuattro	otto-di-coppe		13		otto-di-coppe-storiaQuattro-saggezza	Saggezza	Symbol			
+cavaliere-di-spade-storiaQuattro	cavaliere-di-spade		14		cavaliere-di-spade-storiaQuattro-arcangelo	Arcangelo	Character			«arcangelo ferreo e radioso»
+dieci-di-denari-storiaQuattro	dieci-di-denari		15		dieci-di-denari-storiaQuattro-ricchezza	Ricchezza	Symbol			
+nove-di-bastoni-storiaQuattro	nove-di-bastoni		16		nove-di-bastoni-storiaQuattro-caduta_tra_rami_spezzati	Caduta tra i rami spezzati	Event			 «la città e l'albero si dissolvevano in fumo e il ladrone precipitava in un rovinio di rami spezzati in mezzo al bosco.»
+re-di-spade-storiaCinque	re-di-spade		1	Grande	re-di-spade-storiaCinque-protagonista	Protagonista	Character			«Orlando paladino che mulinava la sua Durlindana.»
+dieci-di-spade-storiaCinque	dieci-di-spade		2	Grande	dieci-di-spade-storiaCinque-storia_di_orlando	Storia bellicosa di Orlando	Event			«E subito i nostri occhi furono come accecati dal polverone delle battaglie [...].»
+regina-di-spade-storiaCinque	regina-di-spade		3	Grande	regina-di-spade-storiaCinque-angelica	Angelica	Character			«donna bionda, che in mezzo alle lame affilate e alle piastre di ferro affaccia l'inafferrabile sorriso d'un gioco sensuale»
+dieci-di-bastoni-storiaCinque	dieci-di-bastoni		4		dieci-di-bastoni-storiaCinque-bosco	Bosco	FinctionalPlace			«Vedemmo la foresta schiudersi malvolentieri all'avanzare del campione [...].»
+il-carro-storiaCinque	il-carro		5	Grande	il-carro-storiaCinque-angelica_si_muove	Angelica si muove sul carro	Event			«una sola visione lo occupava: [...] l'incedere fatato d'Angelica nel bosco [...].»
+lo-amore-storiaCinque	lo-amore		6	Grande	lo-amore-storiaCinque-amore_angelica_e_medoro	Amore tra Angelica e Medoro	Event			«una stretta d'amore morbida e struggente univa intanto Angelica e Medoro.»
+fante-di-bastoni-storiaCinque	fante-di-bastoni		7	Grande	fante-di-bastoni-storiaCinque-medoro	Medoro	Character			«un giovanottino del seguito, snello e civettuolo come una fanciulla»
+il-sole-storiaCinque	il-sole		8	Grande	il-sole-storiaCinque-bambino	Bambino	Character			«Un amorino fuggiva a volo portando via il lume della saggezza d'Orlando [...].» 
+la-forza-storiaCinque	la-forza		9	Grande	la-forza-storiaCinque-violenza	Violenza	Event			«massacro» di Orlando
+cinque-di-bastoni-storiaCinque	cinque-di-bastoni		10		cinque-di-bastoni-storiaCinque-schianto_dei_tronchi	Schianto dei tronchi	Event			«schianto dei tronchi di quercia»
+sette-di-spade-storiaCinque	sette-di-spade		11	Grande	sette-di-spade-storiaCinque-la_durlindana_appesa_e_dimenticata	La Durlindana appesa e dimenticata	InanimateObject			«l'ozio della Durlindana rimasta appesa a un albero e dimenticata»
+cinque-di-denari-storiaCinque	cinque-di-denari		12		cinque-di-denari-storiaCinque-spreco	Spreco	Event			«spreco d'energie e di beni»
+la-luna-storiaCinque	la-luna		13	Grande	la-luna-storiaCinque-luna	Luna	FinctionalPlace			«una terra oramai lunare»
+il-matto-storiaCinque	il-matto		14	Grande	il-matto-storiaCinque-protagonista	Protagonista	Character			«Sfogato ormai il più grosso groppo di furore, [...] con la testa piene di penne [...] ecco che Orlando ersa disceso giù nel cuore caotico delle cose, [...] al punto d'intersezione di tutti gli ordini possibili.»
+tre-di-coppe-storiaCinque	tre-di-coppe		15	Grande	tre-di-coppe-storiaCinque-ampolla	Ampolla	InanimateObject			«un'ampolla custodita nella Valle delle Ragioni Perdute» dove si trova la ragione di Orlando
+la-giustizia-storiaCinque	la-giustizia		16	Piccola	la-giustizia-storiaCinque-cavalieri	I cavalieri seguono Orlando per rinsavirlo	Event			«i cavalieri dell'Armata di Carlomagno seguivano le piste del loro campione [...], non rinunciavano a riportare la sua spada al servizio di Ragione e Giustizia.»
+il-penduto-storiaCinque	il-penduto	L'Appeso	17	Piccola	il-penduto-storiaCinque-armonia_interiore	Armonia interiore	Symbol			«Lasciatemi così. Ho fatto tutto il giro e ho capito. Il mondo si legge all'incontrario. Tutto è chiaro.»
+cavaliere-di-bastoni-storiaSei	cavaliere-di-bastoni		1	Grande	cavaliere-di-bastoni-storiaSei-protagonista	Protagonista	Character			Astolfo
+asso-di-spade-storiaSei	asso-di-spade		2	Grande	asso-di-spade-storiaSei-assenza_di_orlando	Assenza di Orlando	Event			«la Durlindana d'Orlando rimasta inoperosa appesa a un albero...»
+lo-imperatore-storiaSei	lo-imperatore		3	Grande	lo-imperatore-storiaSei-carlo_magno	Carlo Magno	Character	lo-imperatore-storiaSei-carlo_magno_persona	Person	«raffigurato con la barba bianca e la fiorita saggezza di Carlo Magno in trono»
+nove-di-coppe-storiaSei	nove-di-coppe		4	Grande	nove-di-coppe-storiaSei-banchetto	Banchetto	Event			«Prolungandosi l'assenza d'Orlando dal Campo Franco, Astolfo fu chiamato da Re Carlo e invitato a sedere a banchetto con lui...»
+il-matto-storiaSei	il-matto		5	Piccola	il-matto-storiaSei-orlando	Orlando	Character			«[...] Orlando, nostro nipote, ha perso il lume che distingue l'uomo e le bestie savie dalle bestie e dagli uomini matti, e adesso corre [...] cosparso di penne d'uccelli [...].»
+lo-amore-storiaSei	lo-amore		6	Piccola	lo-amore-storiaSei-amore	Eros	Character			«[...] alla pazzia lo ha spinto Eros, dio pagano, che più è represso più devasta...»
+il-mondo-storiaSei	il-mondo		7	Grande	il-mondo-storiaSei-parigi_assediata	Parigi assediata	FinctionalPlace	il-mondo-storiaSei-parigi_assediata_luogo	Place	«Parigi nella cerchia dei suoi baluardi, stretta da mesi nell'assedio saraceno»
+la-torre-storiaSei	la-torre		8		la-torre-storiaSei-caduta_dei_cadaveri	Caduta dei cadaveri	Event			«il precipitare dei cadaveri giù dagli spalti tra getti d'olio rovente e macchine d'assedio all'opera»
+nove-di-spade-storiaSei	nove-di-spade		9	Grande	nove-di-spade-storiaSei-speranza	Speranza	Symbol			«Solo nostro nipote potrebbe guidarci in una sortita che tagli il cerchio di ferro e di fuoco...»
+lo-eremita-storiaSei	lo-eremita		10	Grande	lo-eremita-storiaSei-indovino	Indovino	Character			«un vecchio gobbo con la clessidra in mano, un indovino che rovescia il tempo irreversibile e prima del prima vede il dopo.»@«sapiente»@«magomerlino»
+il-giudizio-storiaSei	il-giudizio		11		il-giudizio-storiaSei-comando	Comando	InanimateObject			«È in cielo che tu devi salire Astolfo»@«ascensione sovrumana»
+dieci-di-coppe-storiaSei	dieci-di-coppe		12	Grande	dieci-di-coppe-storiaSei-deposito	Deposito	FinctionalPlace			«uno sterminato deposito» che conserva il "non vissuto", il "non detto", il "non fatto"
+il-carro-storiaSei	il-carro		13	Piccola	il-carro-storiaSei-astolfo_si_muove	Astolfo sulla Luna	Event			«Astolfo il suo Ippogrifo l'aveva e montò in sella. Prese il largo nel cielo. La Luna crescente gli venne incontro. Planò»
+la-luna-storiaSei	la-luna		14		la-luna-storiaSei-luna	Luna	FinctionalPlace			«la Luna era dipinta con più dolcezza [...].» 
+la-ruota-della-fortuna-storiaDue-la_trasformazione_di_tutto_in_oro	la-ruota-della-fortuna		15		la-ruota-della-fortuna-storiaSei-luna	Luna	FinctionalPlace			«una descrizione più particolareggiata del mondo della Luna, che ci lasciasse sbizzarrire nelle vecchie fantasie d'un mondo all'incontrario [...].»
+il-bagatto-storiaSei	il-bagatto		16		il-bagatto-storiaSei-poeta	Poeta	Character			
+asso-di-denari-storiaSei	asso-di-denari		17		asso-di-denari-storiaSei-luna	Luna	FinctionalPlace			«la Luna è un deserto, [...] da questa sfera arida parte ogni discorso e ogni poema [...].»

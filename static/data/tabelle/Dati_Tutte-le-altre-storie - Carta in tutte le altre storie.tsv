@@ -1,0 +1,98 @@
+odi:StoryCard	odi:specifies	odi:hasVariantName	odi:hasPositionInTheText	odi:hasIconography	odi:carriesRepresentation	odi:hasMeaningOf	rdf:istanceOf	odi:represents	odi:istanceof2	odi:hasTextualReference
+regina-di-denari-tuttelealtrestorieUno	regina-di-denari		1	Grande	regina-di-denari-tuttelealtrestorieUno-protagonista	Protagonista	Character			«una delle più belle dame della compagnia, presentatasi col profilo da donna amorosa»@Elena di Troia
+lo-eremita-tuttelealtrestorieUno	lo-eremita		2	Piccola	lo-eremita-tuttelealtrestorieUno-indovino	Indovino	Character			«un indovino»
+nove-di-spade-tuttelealtrestorieUno	nove-di-spade		3	Piccola	nove-di-spade-tuttelealtrestorieUno-esito_della_guerra	Esito della guerra	Event			«quale fine avrebbe avuto la guerra che da anni la teneva assediata in una città a lei straniera»
+il-giudizio-tuttelealtrestorieUno	il-giudizio		4		il-giudizio-tuttelealtrestorieUno-decisione_degli_Dèi	Decisione degli Dèi	InanimateObject			«la notizia che gli Dèi avevano da tempo decretato»
+la-torre-tuttelealtrestorieUno	la-torre		5		la-torre-tuttelealtrestorieUno-la_caduta_di_troia	La caduta di Troia	Event			«la caduta di Troia»
+il-mondo-tuttelealtrestorieUno	il-mondo		6	Piccola	il-mondo-tuttelealtrestorieUno-troia_assediata	Troia assediata	FinctionalPlace	il-mondo-tuttelealtrestorieUno-troia_assediata_luogo	Place	«quella città fortificata e assediata [...] era vista come Troia [...].»
+dieci-di-coppe-tuttelealtrestorieUno	dieci-di-coppe		7	Piccola	dieci-di-coppe-tuttelealtrestorieUno-banchetto	Banchetto	Event			«i banchetti risonanti di canti e strimpellìo di cetre [...] che gli Achei preparavano per il giorno sospirato della espugnazione.»
+il-carro-tuttelealtrestorieUno	il-carro		8	Piccola	il-carro-tuttelealtrestorieUno-profezia	Profezia	InanimateObject			La profezia dell'indovino: «Entrerà coi vincitori una donna su un carro, una regina o una dea [...]»
+lo-amore-tuttelealtrestorieUno	lo-amore		9	Piccola	lo-amore-tuttelealtrestorieUno-profezia	Profezia	InanimateObject			La profezia dell'indovino: «il tuo Paride cadrà innamorato di lei»
+la-luna-tuttelealtrestorieUno	la-luna		10	Piccola	la-luna-tuttelealtrestorieUno-lume_della_luna	Lume della Luna	InanimateObject			«che spingeva la bella e adultera sposa di Menelao a fuggire al lume della luna dalla città assediata [...]»
+il-matto-tuttelealtrestorieUno	il-matto		11	Piccola	il-matto-tuttelealtrestorieUno-buffone_di_corte	Buffone di corte	Character			«accompagnata solo dal buffone di corte»
+ruota-della-fortuna-tuttelealtrestorieUno	ruota-della-fortuna		12	Piccola	ruota-della-fortuna-tuttelealtrestorieUno-Olimpo	Olimpo	FinctionalPlace			
+nove-di-coppe-tuttelealtrestorieUno	nove-di-coppe		13	Piccola	nove-di-coppe-tuttelealtrestorieUno-banchetto	Banchetto	Event			«banchetto degli Dèi»
+lo-imperatore-tuttelealtrestorieUno	lo-imperatore		14	Piccola	lo-imperatore-tuttelealtrestorieUno-Zeus	Zeus	Character			«sommo Zeus»
+il-bagatto-tuttelealtrestorieUno	il-bagatto		15	Piccola	il-bagatto-tuttelealtrestorieUno-poeta	Poeta	Character			
+asso-di-denari-tuttelealtrestorieUno	asso-di-denari		16	Piccola	asso-di-denari-tuttelealtrestorieUno-elemosina	Elemosina 	InanimateObject			«questa sola elemosina»
+asso-di-spade-tuttelealtrestorieUno	asso-di-spade		17	Piccola	asso-di-spade-tuttelealtrestorieUno-volontà_divina	Volontà divina	InanimateObject			«volontà dei Celesti»
+cavaliere-di-bastoni-tuttelealtrestorieUno	cavaliere-di-bastoni		18	Piccola	cavaliere-di-bastoni-tuttelealtrestorieUno-cavallo_di_troia	Cavallo di Troia	InanimateObject			
+regina-di-coppe-tuttelealtrestorieDue	regina-di-coppe		1	Grande	regina-di-coppe-tuttelealtrestorieDue-protagonista	Protagonista	Character			regina «soccorrevole»
+la-forza-tuttelealtrestorieDue	la-forza		2		la-forza-tuttelealtrestorieDue-brigante	Brigante	Character			«feroce brigante»
+il-penduto-tuttelealtrestorieDue	il-penduto		3		il-penduto-tuttelealtrestorieDue-brigante	Brigante	Character			«un feroce brigante [...] appeso a uno strumento di tortura»
+il-sole-tuttelealtrestorieDue	il-sole		4		il-sole-tuttelealtrestorieDue-sole	Sole	InanimateObject			
+la-giustizia-tuttelealtrestorieDue	la-giustizia		5		la-giustizia-tuttelealtrestorieDue-giustizia	Giustizia	Symbol			
+tre-di-coppe-tuttelealtrestorieDue	tre-di-coppe		6		tre-di-coppe-tuttelealtrestorieDue-bevuta_del_brigante	Bevuta del brigante	Event			«N'ebbe pietà, s'avvicinò, gli porse da bere»
+fante-di-bastoni-tuttelealtrestorieDue	fante-di-bastoni		7		fante-di-bastoni-tuttelealtrestorieDue-brigante	Brigante	Character			«un giovane agile e gentile»
+il-carro-tuttelealtrestorieDue	il-carro		8	Piccola	il-carro-tuttelealtrestorieDue-carro	Carro	InanimateObject			«carro regale»
+lo-amore-tuttelealtrestorieDue	lo-amore		9	Piccola	lo-amore-tuttelealtrestorieDue-innamoramento_della_protagonista	Innamoramento della protagonista 	Event			
+la-luna-tuttelealtrestorieDue	la-luna		10	Piccola	la-luna-tuttelealtrestorieDue-liberazione_di_notte	Liberazione di notte	Event			«lo liberava nottetempo»
+il-matto-tuttelealtrestorieDue	il-matto		11	Piccola	il-matto-tuttelealtrestorieDue-vagabondo	Vagabondo	Character			«invitandolo a fuggire camuffato da vagabondo»
+dieci-di-bastoni-tuttelealtrestorieDue	dieci-bastoni		12		dieci-di-bastoni-tuttelealtrestorieDue-bosco	Bosco	FinctionalPlace			«nell'oscurità del bosco»
+cinque-di-denari-tuttelealtrestorieDue	cinque-di-denari		13		cinque-di-denari-tuttelealtrestorieDue-luce_del_mattino	Luce del mattino	Event			«fino ai primi chiarori dorati del mattino»
+regina-di-spade-tuttelealtrestorieDue	regina-di-spade		14	Piccola	regina-di-spade-tuttelealtrestorieDue-guerriera	Guerriera	Character			«una splendida guerriera» 
+dieci-di-spade-tuttelealtrestorieDue	dieci-di-spade		15	Piccola	dieci-di-spade-tuttelealtrestorieDue-guerra	Guerra	Event			«la guerrra con le armate del giorno»
+re-di-bastoni-tuttelealtrestorieTre	re-di-bastoni		1	Grande	re-di-bastoni-tuttelealtrestorieTre-protagonista	Protagonista	Character			«un tale»
+il-mondo-tuttelealtrestorieTre	il-mondo		2		il-mondo-tuttelealtrestorieTre-città_sotterranea	Città sotterranea	FinctionalPlace			«una città sotterranea»
+nove-di-bastoni-tuttelealtrestorieTre	nove-di-bastoni		3		nove-di-bastoni-tuttelealtrestorieTre-bosco	Bosco	FinctionalPlace			«un bosco magico»
+cavaliere-di-spade-tuttelealtrestorieTre	cavaliere-di-spade		4		cavaliere-di-spade-tuttelealtrestorieTre-guerriero	Guerriero	Character			«uno sconosciuto guerriero dalle armi nere»
+nove-di-denari-tuttelealtrestorieTre	nove-di-denari		5		nove-di-denari-tuttelealtrestorieTre-ricchezza	Ricchezza	Symbol			«gli vantava le sue ricchezze»
+dieci-di-coppe-tuttelealtrestorieTre	dieci-di-coppe		6		dieci-di-coppe-tuttelealtrestorieTre-osteria	Osteria	FinctionalPlace			«alterco d'osteria»
+asso-di-bastoni-tuttelealtrestorieTre	asso-di-bastoni		7	Grande	asso-di-bastoni-tuttelealtrestorieTre-scettro	Scettro	InanimateObject			«scettro della città»
+la-morte-tuttelealtrestorieTre	la-morte		8	Piccola	la-morte-tuttelealtrestorieTre-principe_della_discontinuità	Diavolo	Character			«Principe della Discontinuità»
+dieci-di-denari-tuttelealtrestorieTre	dieci-di-denari		9		dieci-di-denari-tuttelealtrestorieTre-età_dello_oro	Età dell'oro	Event			«una nuova Età dell'Oro»
+otto-di-coppe-tuttelealtrestorieTre	otto-di-coppe		10		otto-di-coppe-tuttelealtrestorieTre-spreco	Spreco	Symbol			Età dell'Oro: «gli uomini scialacquavano in bagordi»
+sei-di-spade-tuttelealtrestorieTre	sei-di-spade		11		sei-di-spade-tuttelealtrestorieTre-battaglie	Battaglie	Symbol			Età dell'Oro: «incrociavano le spade in innocue zuffe»
+la-torre-tuttelealtrestorieTre	la-torre		12		la-torre-tuttelealtrestorieTre-follia	Follia	Symbol			Età dell'Oro: «si buttavano indenni giù da alte torri»
+il-giudizio-tuttelealtrestorieTre	il-giudizio		13	Piccola	il-giudizio-tuttelealtrestorieTre-giudizio	Giudizio	Symbol			Età dell'Oro: «E le tombe abitate dai vivi in tripudio erano quelle dei cimiteri ormai inutili dove i gaudenti si riunivano per le loro orge, sotto lo sguardo esterrefatto degli angeli e di Dio»
+quattro-di-bastoni-tuttelealtrestorieTre	quattro-di-bastoni		14		quattro-di-bastoni-tuttelealtrestorieTre-deserto	Deserto	FinctionalPlace			«un deserto irto di stecchi»
+otto-di-denari-tuttelealtrestorieTre	otto-di-denari		15		otto-di-denari-tuttelealtrestorieTre-montagna	Montagna	FinctionalPlace			«una montagna di freddo metallo»
+il-papa-tuttelealtrestorieTre	il-papa		16	Piccola	il-papa-tuttelealtrestorieTre-papa	Papa	Character			«adirato Pontefice»
+cavaliere-di-denari-tuttelealtrestorieQuattro	cavaliere-di-denari		1		cavaliere-di-denari-tuttelealtrestorieQuattro-protagonista	Protagonista	Character			«un altro convitato che si presentava sotto le mentite spoglie»
+quattro-di-denari-tuttelealtrestorieQuattro	quattro-di-denari		2		quattro-di-denari-tuttelealtrestorieQuattro-viatico	Viatico	Event			«egli aveva abbandonato i fasti della corte papale per portare l'estremo viatico ai moribondi sul campo di battaglia.»
+la-morte-tuttelealtrestorieQuattro	la-morte		3		la-morte-tuttelealtrestorieQuattro-distesa_dei_cadaveri	Distesa dei cadaveri	FinctionalPlace			«distesa dei corpi»
+dieci-di-spade-tuttelealtrestorieQuattro	dieci-di-spade		4		dieci-di-spade-tuttelealtrestorieQuattro-cadaveri_squartati	Cadaveri squartati	Character			«distesa dei corpi squartati»
+cinque-di-bastoni-tuttelealtrestorieQuattro	cinque-di-bastoni		5		cinque-di-bastoni-tuttelealtrestorieQuattro-vista_del_massacro	Vista del massacro	Event			«vista del massacro»
+il-diavolo-tuttelealtrestorieQuattro	il-diavolo		6		il-diavolo-tuttelealtrestorieQuattro-diavolo	Diavolo	Character			
+due-di-denari-tuttelealtrestorieQuattro	due-di-denari		7	Piccola	due-di-denari-tuttelealtrestorieQuattro-dualità_bene_male	Dualità del Bene e del Male	Symbol			«Siamo in due a dividerci il mondo e le anime!»
+quattro-di-spade-tuttelealtrestorieQuattro	quattro-di-spade		8	Piccola	quattro-di-spade-tuttelealtrestorieQuattro-contesa	Contesa	Event			«Non sta a Lui solo di permettere o di non permettere! Deve pur sempre fare i conti con me!»
+fante-di-spade-tuttelealtrestorieQuattro	fante-di-spade		9	Piccola	fante-di-spade-tuttelealtrestorieQuattro-guerriero	Guerriero	Character			«un guerriero dall'aria sprezzante»@«Principe delle Opposizioni»
+sei-di-coppe-tuttelealtrestorieQuattro	sei-di-coppe		10		sei-di-coppe-tuttelealtrestorieQuattro-pace_nel_mondo	Pace nel mondo	Event			
+due-di-bastoni-tuttelealtrestorieQuattro	due-di-bastoni		11	Piccola	due-di-bastoni-tuttelealtrestorieQuattro-vittoria_altro_su_uno	Vittoria dell'Altro sull'Uno	Event			«l'Altro è stato vinto dall'Uno!»
+due-di-bastoni-tuttelealtrestorieQuattro	due-di-bastoni		11	Piccola	due-di-bastoni-tuttelealtrestorieQuattro-necessità_di_una_scelta	Necessità di una scelta	Event			«Due sono le strade. Scegli»
+regina-di-spade-tuttelealtrestorieQuattro	regina-di-spade		12	Piccola	regina-di-spade-tuttelealtrestorieQuattro-dea_della_distruzione	Dea della distruzione	Character			«io sono la gioiosa Dea della Distruzione, che governa il disfarsi e il rifarsi ininterrotto del mondo.»
+sette-di-spade-tuttelealtrestorieQuattro	sette-di-spade		13		sette-di-spade-tuttelealtrestorieQuattro-guerra	Guerra	Event			«Una guerra senza fine agita l'universo [...] e non risparmia gli spiriti né gli atomi.»
+la-stella-tuttelealtrestorieQuattro	la-stella		14		la-stella-tuttelealtrestorieQuattro-stelle	Stelle	InanimateObject			«stelle del firmamento»
+sette-di-denari-tuttelealtrestorieQuattro	sette-di-denari		15		sette-di-denari-tuttelealtrestorieQuattro-raggi_di_luce	Raggi di luce	InanimateObject			«raggi di luce»
+sei-di-spade-tuttelealtrestorieQuattro	sei-di-spade		16		sei-di-spade-tuttelealtrestorieQuattro-battaglie	Battaglie	Event			«battaglie di corpuscoli impalpabili, invasioni, assalti, giostre, vortici...»
+fante-di-coppe-tuttelealtrestorieCinque	fante-di-coppe		1	Grande	fante-di-coppe-tuttelealtrestorieCinque-protagonista	Protagonista	Character			«castellano-locandiere»
+il-diavolo-tuttelealtrestorieCinque	il-diavolo		2		il-diavolo-tuttelealtrestorieCinque-avventore	Diavolo	Character			«insolito avventore»
+due-di-denari-tuttelealtrestorieCinque	due-di-denari		3		due-di-denari-tuttelealtrestorieCinque-due_denari	Due denari	InanimateObject			«ben più di Due Denari voglio darti!»
+la-stella-tuttelealtrestorieCinque	la-stella		4	Piccola	la-stella-tuttelealtrestorieCinque-fantesca	Fantesca	Character			«fantesca mandata a riscuotere il conto»
+cinque-di-coppe-tuttelealtrestorieCinque	cinque-di-coppe		5		cinque-di-coppe-tuttelealtrestorieCinque-coppe	Coppe	InanimateObject			«Ha rovesciato una delle Coppe sul tavolo»
+sette-di-denari-tuttelealtrestorieCinque	sette-di-denari		6		sette-di-denari-tuttelealtrestorieCinque-ricchezza	Ricchezza	Symbol			«un fiume di Denari»
+il-bagatto-tuttelealtrestorieCinque	il-bagatto		7	Piccola	il-bagatto-tuttelealtrestorieCinque-protagonista	Protagonista	Character			«oste-ciarlatano»
+lo-imperatore-tuttelealtrestorieCinque	lo-imperatore		8		lo-imperatore-tuttelealtrestorieCinque-ambizione	Ambizione	Symbol			«l'oste-ciarlatano che sognava di diventare Imperatore»
+nove-di-coppe-tuttelealtrestorieCinque	nove-di-coppe		9		nove-di-coppe-tuttelealtrestorieCinque-inganno	Inganno	Symbol			«giochi di bussolotti»
+ruota-della-fortuna-tuttelealtrestorieCinque	ruota-della-fortuna		10	Piccola	ruota-della-fortuna-tuttelealtrestorieCinque-intenzione_di_capovolgere_il_mondo	Intenzione di capovolgere il mondo	Symbol			
+la-papessa-tuttelealtrestorieCinque	la-papessa		11	Piccola	la-papessa-tuttelealtrestorieCinque-sacerdotessa	Sacerdotessa	Character			«Gran Sacerdotessa che nel bosco celebrava un tripudio rituale»
+la-temperanza-tuttelealtrestorieCinque	la-temperanza		12		la-temperanza-tuttelealtrestorieCinque-baccanti	Baccanti	Character			
+asso-di-coppe-tuttelealtrestorieCinque	asso-di-coppe		13	Piccola	asso-di-coppe-tuttelealtrestorieCinque-coppa_sacra	Coppa sacra	InanimateObject			
+regina-di-bastoni-tuttelealtrestorieSei	regina-di-bastoni		1	Grande	regina-di-bastoni-tuttelealtrestorieSei-protagonista	Protagonista	Character			«nostra narratrice, allora tenera educanda»
+otto-di-spade-tuttelealtrestorieSei	otto-di-spade		2		otto-di-spade-tuttelealtrestorieSei-guerra	Guerra	Event			«guerra che regnava tra le monache»
+la-papessa-tuttelealtrestorieSei	la-papessa		3		la-papessa-tuttelealtrestorieSei-badessa	Badessa	Character			«Badessa d'un convento»
+due-di-spade-tuttelealtrestorieSei	due-di-spade		4	Piccola	due-di-spade-tuttelealtrestorieSei-duello	Duello tra protagonista e condottiero	Event			
+la-giustizia-tuttelealtrestorieSei	la-giustizia		5	Piccola	la-giustizia-tuttelealtrestorieSei-protagonista	Protagonista	Character			«una provetta spadaccina»
+il-sole-tuttelealtrestorie-Sei	il-sole		6	Piccola	il-sole-tuttelealtrestorie-Sei-apparizione_della_protagonista	Apparizione della protagonista	Event			«sfolgorante apparizione» 
+cavaliere-di-spade-tuttelealtrestorieSei	cavaliere-di-spade		7	Piccola	cavaliere-di-spade-tuttelealtrestorieSei-condottiero	Condottiero	Character			«condottiero degli invasori»@«principe sfidato a duello» 
+otto-di-coppe-tuttelealtrestorieSei	otto-di-coppe		8		otto-di-coppe-tuttelealtrestorieSei-banchetto_di_nozze	Banchetto di nozze	Event			
+la-imperatrice-tuttelealtrestorieSei	la-imperatrice		9	Piccola	la-imperatrice-tuttelealtrestorieSei-madre_del_condottiero	Madre del condottiero	Character			
+re-di-denari-tuttelealtrestorieSei	re-di-denari		10	Piccola	re-di-denari-tuttelealtrestorieSei-padre_del_condottiero	Padre del condottiero	Character			
+cavaliere-di-coppe-tuttelealtrestorieSei	cavaliere-di-coppe		11		cavaliere-di-coppe-tuttelealtrestorieSei-allontanamento_del_condottiero	Allontanamento del condottiero	Event			
+dieci-di-denari-tuttelealtrestorieSei	dieci-di-denari		12		dieci-di-denari-tuttelealtrestorieSei-pagamento_per_uno_scherano	Pagamento per uno scherano	Event			«i crudeli suoceri pagarono uno scherano» 
+nove-di-bastoni-tuttelealtrestorieSei	nove-di-bastoni		13		nove-di-bastoni-tuttelealtrestorieSei-bosco	Bosco	FinctionalPlace			
+la-forza-tuttelealtrestorieSei	la-forza		14	Piccola	la-forza-tuttelealtrestorieSei-scherano	Scherano	Character			«l'energumeno»
+il-penduto-tuttelealtrestorieSei	il-penduto	L'Appeso	15	Piccola	il-penduto-tuttelealtrestorieSei-scherano	Scherano	Character			«lo scherano [...] legato a testa in giù»
+la-temperanza-tuttelealtrestorieSei	la-temperanza		16	Piccola	la-temperanza-tuttelealtrestorieSei-protagonista	Protagonista	Character			«l'eroina s'era celata sotto i panni d'una ostessa o ancella di castello»
+asso-di-coppe-tuttelealtrestorieSei	asso-di-coppe		17	Piccola	asso-di-coppe-tuttelealtrestorieSei-vino	Vino	InanimateObject			«purissimo vino»
+due-di-coppe-tuttelealtrestorieSei	due-di-coppe		18	Piccola	due-di-coppe-tuttelealtrestorieSei-tavola_per_due	Allestimento di una tavola per due	Event			«Eccola ora apparecchiare una tavola per due, attendere il ritorno dello sposo [...].»
