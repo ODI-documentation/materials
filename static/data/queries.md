@@ -127,7 +127,7 @@ where {
 ## The narrative function of court cards and triumphs
 
 Court cards express each main character of the stories (e.g. the *Cavaliere di Coppe* in *Storia dell'ingrato punito*). For this reason, querying ODI to find out the semantic content of all the representations of the court cards was useful for two reasons: firstly because the existence of cases in which court cards don't represent the main character underlined the non-exclusivity of the representation for this type of card (e.g. the *Fante di Bastoni* in *Storia dell'Orlando pazzo per amore* which represents Medoro instead of Orlando); secondly because showed court cards' representation almost always as characters of the stories (odi:Character, 12 occurrences) except for one occurrence in which the court card refers to an inanimate object (i.e. "Trojan horse" in the first story of *Tutte le altre storie* ) and two occurrences concerning an event (i.e. "removal of a leader" in the last story of *Tutte le altre storie*; "unforeseen" in *Storia dell'ingrato punito*). It is clear therefore that Calvino prefers court cards to represent characters in the stories.
-Triumphs present have more complex miniatures and this complexity stimulates the author's imagination enriching multiple possibilities of interpretation for the narrative plots. The results of the seventh query are, indeed, diversified: some triumphs represent characters (e.g. "brigand", "maiden"), others inanimate objects (e.g. "prediction", "soul"), still others events (e.g. "violence", "transformation of everything into gold") or finctional places (e.g. "grave", "moon"); finally, some refer to symbols (e.g. "inner harmony", "justice").
+Triumphs present have more complex miniatures and this complexity stimulates the author's imagination enriching multiple possibilities of interpretation for the narrative plots. The results of the seventh query are, indeed, diversified: some triumphs represent characters (e.g. "brigand", "maiden"), others inanimate objects (e.g. "prediction", "soul"), still others events (e.g. "violence", "transformation of everything into gold") or fictional places (e.g. "grave", "moon"); finally, some refer to symbols (e.g. "inner harmony", "justice").
 
 ### Court cards
 
@@ -228,7 +228,7 @@ where {
 | 22 | bacodi:il-matto    | odi:Character       |
 | 23 | bacodi:il-matto    | odi:Character       |
 | 24 | bacodi:il-matto    | odi:Character       |
-| 25 | bacodi:il-mondo    | odi:FinctionalPlace |
+| 25 | bacodi:il-mondo    | odi:FictionalPlace |
 
 ## Using the same cards with the same meaning in different stories
 
