@@ -274,6 +274,8 @@ div.card-header a {text-align:right}
 
 a {color:black}
 a:hover {color:black;}
+a:link {color:black;}
+a:hover {color: #006600;}
 
 hr {
   margin: 1rem 0;
