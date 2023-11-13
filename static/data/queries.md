@@ -4,9 +4,9 @@
 
 The first four queries have significant results for the study of the semiotics of suits in numeral cards. 
 As concerns the suit of Wands, the largest percentage shows that the reference is to *Il Castello*'s forest setting. In those cases where the semantics diverts from the setting arises that it's the number that defines the meaning of the card: the *Due di Bastoni* is, indeed, used to express a duality or a crossroad (fourth story of *Tutte le altre storie*) regardless of the suit; the *Asso di Bastoni*, whereas, may refer not only to the tree, but also to the power and its material symbol (third story of *Tutte le altre storie*). 
-The suit of Coins, though, refers to two opposite semantic fields: the first concerns earthly power, wealth and materiality (e.g. "richness", "inheritance", "money"); the second regards heaven, divine and broadly the immaterial world (e.g. "light", "moon", "state of beatitude"). However, the former prevails to the latter. 
-The largest percentage of the results obtained for the suit of Swords relates to warfare (e.g. "war", "duel", "dispute"); sometimes, it specifically refers to defence (e.g. "barrier", "guards"). 
-Finally, the semantic meaning associated for the suit of Cups is less clearly defined than the three aforementioned suits: a large percentage refers to banqueting and refreshment (e.g. "banquet", "wedding banquet", "tavern"); there are, however, other references such as those related to well-being (e.g. "the source of life") or love life (e.g. "love encounter").
+The suit of Coins, though, refers to two opposite semantic fields: the first concerns earthly power, wealth and materiality (e.g. 'richness', 'inheritance', 'money'); the second regards heaven, divine and broadly the immaterial world (e.g. 'light', 'moon', 'state of beatitude'). However, the former prevails to the latter. 
+The largest percentage of the results obtained for the suit of Swords relates to warfare (e.g. 'war', 'duel', 'dispute'); sometimes, it specifically refers to defence (e.g. 'barrier', 'guards'). 
+Finally, the semantic meaning associated for the suit of Cups is less clearly defined than the three aforementioned suits: a large percentage refers to banqueting and refreshment (e.g. 'banquet', 'wedding banquet', 'tavern'); there are, however, other references such as those related to well-being (e.g. 'the source of life') or love life (e.g. 'love encounter').
 
 ### Wands
 
@@ -126,12 +126,12 @@ where {
 
 ## The narrative function of court cards and triumphs
 
-Court cards express each main character of the stories (e.g. the *Cavaliere di Coppe* in *Storia dell'ingrato punito*). For this reason, querying ODI to find out the semantic content of all the representations of the court cards was useful for two reasons: firstly because the existence of cases in which court cards don't represent the main character underlined the non-exclusivity of the representation for this type of card (e.g. the *Fante di Bastoni* in *Storia dell'Orlando pazzo per amore* which represents Medoro instead of Orlando); secondly because showed court cards' representation almost always as characters of the stories (odi:Character, 12 occurrences) except for one occurrence in which the court card refers to an inanimate object (i.e. "Trojan horse" in the first story of *Tutte le altre storie*) and two occurrences concerning an event (i.e. "removal of a leader" in the last story of *Tutte le altre storie*; "unforeseen" in *Storia dell'ingrato punito*). It is clear therefore that Calvino prefers court cards to represent characters in the stories.
-Triumphs have more complex miniatures and this complexity stimulates the author's imagination enriching multiple possibilities of interpretation for the narrative plots. The results of the seventh query are, indeed, diversified: some triumphs represent characters (e.g. "brigand", "maiden"), others inanimate objects (e.g. "prediction", "soul"), still others events (e.g. "violence", "transformation of everything into gold") or fictional places (e.g. "grave", "moon"); finally, some refer to symbols (e.g. "inner harmony", "justice").
+Court cards express each protagonist of the stories (e.g. the *Cavaliere di Coppe* in *Storia dell'ingrato punito*). For this reason, querying ODI to find out the semantic content of all the representations of the court cards was useful for two reasons: firstly because the existence of cases in which court cards don't represent the protagonist underlined the non-exclusivity of the representation for this type of card (e.g. the *Fante di Bastoni* in *Storia dell'Orlando pazzo per amore* which represents Medoro instead of Orlando); secondly because showed court cards' representation almost always as characters of the stories (odi:Character, 12 occurrences) except for one occurrence in which the court card refers to an inanimate object (i.e. 'Trojan horse' in the first story of *Tutte le altre storie*) and two occurrences concerning an event (i.e. 'removal of a leader' in the last story of *Tutte le altre storie*; 'unforeseen' in *Storia dell'ingrato punito*). It is clear therefore that Calvino prefers court cards to represent characters in the stories.
+Triumphs have more complex miniatures and this complexity stimulates the author's imagination enriching multiple possibilities of interpretation for the narrative plots. The results of the seventh query are, indeed, diversified: some triumphs represent characters (e.g. 'brigand', 'maiden'), others inanimate objects (e.g. 'prediction', 'soul'), still others events (e.g. 'violence', 'transformation of everything into gold') or fictional places (e.g. 'grave', 'moon'); finally, some refer to symbols (e.g. 'inner harmony', 'justice').
 
 ### Court cards
 
-Are there cases in which court cards haven't a reference to the main character?
+Are there cases in which court cards haven't a reference to the protagonist?
 
 ```
 select ?cardDeck ?meaning
@@ -233,7 +233,7 @@ where {
 ## Using the same cards with the same meaning in different stories
 
 The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific iconography and because it is used in two stories that share a reference to the story of Orlando. 
-Other results from the query are, whereas, meaningful as they show how other cards have the same representation in different occurrences, despite of the non-uniqueness miniatures: for instance, the *Nove di Coppe* in both the first and last story of the chapter *Tutte le altre storie* is used to represent "banquet"; the *Otto di Coppe* in *Storia dell'ingrato punito* and in the last story of the final chapter signifies "wedding banquet".
+Other results from the query are, whereas, meaningful as they show how other cards have the same representation in different occurrences, despite of the non-uniqueness miniatures: for instance, the *Nove di Coppe* in both the first and last story of the chapter *Tutte le altre storie* is used to represent 'banquet'; the *Otto di Coppe* in *Storia dell'ingrato punito* and in the last story of the final chapter signifies 'wedding banquet'.
 
 ### Same meaning in different stories
 
@@ -338,9 +338,9 @@ where {
 
 ## Patterns of cards
 
-Each main character can have one or more "simple relations" (i.e. a direct relations) and one or more "complex relations" (i.e. an indirect relations), with the other cards in its story: specifically, cards that have a direct relation can either be specified (odi:isSpecifiedBy) or have a general relationship (odi:isRelatedWith) with the card that has an indirect relation with the main one.
-For instance, the triumphs *Il Mondo* and *La Torre* are used twice to express the same narrative pattern: the physiognomy of the city represented by *Il Mondo* and which have a direct relation with the main character is specified by the card *La Torre* (i.e.*La Torre* refers  in *Storia dell'ingrato punito*  to the rooftops and in the first story of *Tutte le altre storie*  the fall of the city, Troy).
-An example concerning the second case can be found with the numerals *Due di Denari* and *Quattro di Spade* which have a general relation with the triumph *Il Diavolo* in three occurrences (i.e. *Storia della sposa dannata*, and the fourth and fifth story of the chapter *Tutte le altre storie*). In each occurrence the narrative pattern is similar: the main character has a direct relation with *Il Diavolo* (odi:bumpsInto; odi:speaksTo) and during a speech between them both of the numerals convey a message.
+Each protagonist can have one or more 'simple relations' (i.e. a direct relations) and one or more 'complex relations' (i.e. an indirect relations), with the other cards in its story: specifically, cards that have a direct relation can either be specified (odi:isSpecifiedBy) or have a general relationship (odi:isRelatedWith) with the card that has an indirect relation with the main one.
+For instance, the triumphs *Il Mondo* and *La Torre* are used twice to express the same narrative pattern: the physiognomy of the city represented by *Il Mondo* and which have a direct relation with the protagonist is specified by the card *La Torre* (i.e.*La Torre* refers  in *Storia dell'ingrato punito*  to the rooftops and in the first story of *Tutte le altre storie*  the fall of the city, Troy).
+An example concerning the second case can be found with the numerals *Due di Denari* and *Quattro di Spade* which have a general relation with the triumph *Il Diavolo* in three occurrences (i.e. *Storia della sposa dannata*, and the fourth and fifth story of the chapter *Tutte le altre storie*). In each occurrence the narrative pattern is similar: the protagonist has a direct relation with *Il Diavolo* (odi:bumpsInto; odi:speaksTo) and during a speech between them both of the numerals convey a message.
 
 ### Specification
 
@@ -412,11 +412,11 @@ where {
 
 There are a total of 118 iconographic images running along edition's margins comprising 61 large and 57 small images. Iconographic dimensions however are different.
 The three queries regarding the iconographic dimension of the cards show that, as regards numerals and triumphs, the discrepancy between the number of big dimensions and small dimensions is little.
-Iconographic dimension of court cards, and in particular those representing main characters, is differently almost always big with the exception of three occurrences in the sixth chapter *Tutte le altre storie* in which it's printed with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences however the three cards express something else than the main character's presentation at the beginning of the story. In other words, the big size serves, initially, to the reader of the story to identify the main character's card; the other times the main character appears with a different card it can be either big or small in size. For instance, in *Storia dell’alchimista che vendette l’anima* the main character is, initially, represented by the *Fante di Coppe* and it has got a big dimension. After, the main character is represented by *Il Bagatto* to express the main character's desire to become emperor and the triumph is printed with a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the main character's card, the big dimension indicates the importance of the main character as the main driving force of the narration.
+Iconographic dimension of court cards, and in particular those representing protagonists, is differently almost always big with the exception of three occurrences in the sixth chapter *Tutte le altre storie* in which it's printed with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences however the three cards express something else than the protagonist's presentation at the beginning of the story. In other words, the big size serves, initially, to the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card it can be either big or small in size. For instance, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented by the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented by *Il Bagatto* to express the protagonist's desire to become emperor and the triumph is printed with a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist's card, the big dimension indicates the importance of the protagonist as the main driving force of the narration.
 
-### Main character's dimension
+### protagonist's dimension
 
-What is the iconographic dimension of the main character?
+What is the iconographic dimension of the protagonist?
 
 ```
 select distinct ?cardDeck ?story ?iconography
@@ -525,14 +525,14 @@ ORDER BY DESC (?n_stories)
 
 # Relations between cards
 
-## "simple relations" and "complex relations"
+## 'simple relations' and 'complex relations'
 
-The direct relation that each main character has with the other cards within each story have a minimal gap compared to the indirect ones: the formers, in fact, appear 83 times compared to the total number of 71 for the latters.
-The last query provides one of the most interesting results for a narratological research of the text: some properties, relating to narrative relations, are used more frequently than others. By following the decreasing order of incidence of the various relations, it is possible to delineate a constant narrative sequence: a character (the main) comes across (odi:bumpsInto) another character at a certain place in the story - which is almost always the "forest" or the "wood" - (odi:movingThrough) and, once received something (odi:receives), he or she sets off to reach another place (odi:arrivesAt) where the story will develop further. This narrative sequence is meaningful to note an order in the way Calvino tells stories using tarot cards as signs.
+The direct relation that each protagonist has with the other cards within each story have a minimal gap compared to the indirect ones: the formers, in fact, appear 83 times compared to the total number of 71 for the latters.
+The last query provides one of the most interesting results for a narratological research of the text: some properties, relating to narrative relations, are used more frequently than others. By following the decreasing order of incidence of the various relations, it is possible to delineate a constant narrative sequence: a character (the main) comes across (odi:bumpsInto) another character at a certain place in the story - which is almost always the 'forest' or the 'wood' - (odi:movingThrough) and, once received something (odi:receives), he or she sets off to reach another place (odi:arrivesAt) where the story will develop further. This narrative sequence is meaningful to note an order in the way Calvino tells stories using tarot cards as signs.
 
 ### Simple relations
 
-How many cards have a simple relation with the main character?
+How many cards have a simple relation with the protagonist?
 
 ```
 select ?representation1 ?relation ?representation2
@@ -565,7 +565,7 @@ where {
 
 ### Complex relations
 
-How many cards have a complex relation with the main character?
+How many cards have a complex relation with the protagonist?
 
 ```
 select ?representation1 ?representation2

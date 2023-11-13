@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
-@media only screen and (max-width: 768px) {
-  #intro-img {
-    display: none;
-    margin-top:1vw !important;
-  }
-}
-
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
@@ -124,9 +117,9 @@ th {
 .top-navbar img {max-height:4em; padding-bottom:1em; float:left}
 
 
-footer  {width:100%; margin-top:1em; background-color: #fff;}
-
-footer img {max-height:7em; padding-bottom:1em; float:left}
+footer  {width:100%; margin-top:1em; background-color: #fff; font-family: 'Source Sans Pro', sans-serif; font-size: 15px;}
+footer 
+.img {max-height:7em; padding-bottom:1em; float:left;}
 
 
 
@@ -277,6 +270,11 @@ a:hover {color:black;}
 a:link {color:black;}
 a:hover {color: #006600;}
 
+.link_convegno 
+  a:hover {color:back;}
+  a:link {text-decoration: none !important;}
+  a {color:black; font-weight:bold;}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -285,7 +283,11 @@ hr {
   opacity: 0.25;
 }
 
-p {text-align:justify}
+p {
+  text-align:justify;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 pre {color:grey}
 
