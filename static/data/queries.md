@@ -596,7 +596,7 @@ where {
 | 15 | bacodi:cavaliere-di-bastoni-storiaSei-protagonista | bacodi:il-matto-storiaSei-orlando |  |
 
 
-### ++ Simple relations
+### Major occurrences of simple relations
 
 What are the simple relations that appear most frequently in the collection?
 
