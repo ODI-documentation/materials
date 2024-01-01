@@ -232,7 +232,7 @@ where {
 
 ## Using the same cards with the same meaning in different stories
 
-The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific iconography and because it is used in two stories that share a reference to the story of Orlando. 
+The meaning of the triumph *La Luna* in *Storia dell'Orlando pazzo per amore* and in *Storia di Astolfo sulla Luna* can only be the moon, both because the card can only refer to the moon due to its specific miniature and because it is used in two stories that share a reference to the story of Orlando. 
 Other results from the query are, whereas, meaningful as they show how other cards have the same representation in different occurrences, despite of the non-uniqueness miniatures: for instance, the *Nove di Coppe* in both the first and last story of the chapter *Tutte le altre storie* is used to represent 'banquet'; the *Otto di Coppe* in *Storia dell'ingrato punito* and in the last story of the final chapter signifies 'wedding banquet'.
 
 ### Same meaning in different stories
@@ -408,15 +408,15 @@ where {
 | 9 | bacodi:il-diavolo | bacodi:TuttelealtrestorieCinque | bacodi:due-di-denari | bacodi:TuttelealtrestorieCinque |
 | 10 | bacodi:la-papessa | bacodi:TuttelealtrestorieCinque | bacodi:asso-di-coppe | bacodi:TuttelealtrestorieCinque |
 
-## The iconographic dimension
+## The miniatures' dimension
 
-There are a total of 118 iconographic images running along edition's margins comprising 61 large and 57 small images. Iconographic dimensions however are different.
-The three queries regarding the iconographic dimension of the cards show that, as regards numerals and triumphs, the discrepancy between the number of big dimensions and small dimensions is little.
-Iconographic dimension of court cards, and in particular those representing protagonists, is differently almost always big with the exception of three occurrences in the sixth chapter *Tutte le altre storie* in which it's printed with a small size (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences however the three cards express something else than the protagonist's presentation at the beginning of the story. In other words, the big size serves, initially, to the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card it can be either big or small in size. For instance, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented by the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented by *Il Bagatto* to express the protagonist's desire to become emperor and the triumph is printed with a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist's card, the big dimension indicates the importance of the protagonist as the main driving force of the narration.
+There are a total of 118 miniature reproductions in the margin of the text comprising 61 large and 57 small images. Miniature reproductions however have different dimensions.
+The three queries regarding the dimension of the reproductions show that, as regards numerals and triumphs, the discrepancy between the number of big dimensions and small dimensions is little.
+Court cards' miniature reproductions, and in particular those representing protagonists, have differently almost always big dimension with the exception of three occurrences in the sixth chapter *Tutte le altre storie* in which they are printed with a small dimension (*Il Bagatto* in the fifth story; *La Temperanza* and *La Giustizia* in the last story). In all three occurrences however the three cards express something else than the protagonist's presentation at the beginning of the story. In other words, the big size serves, initially, to the reader of the story to identify the protagonist's card; the other times the protagonist appears with a different card it can be either big or small in size. For instance, in *Storia dell’alchimista che vendette l’anima* the protagonist is, initially, represented by the *Fante di Coppe* and it has got a big dimension. After, the protagonist is represented by *Il Bagatto* to express the protagonist's desire to become emperor and the triumph is printed with a small dimension. In this way, the author’s artistic choice to give importance to the dimension of each card in the text is proven. In the case of the protagonist's card, the big dimension indicates the importance of the protagonist as the main driving force of the narration.
 
-### protagonist's dimension
+### The protagonist's dimension
 
-What is the iconographic dimension of the protagonist?
+What is the miniature reproduction's dimension of the protagonist?
 
 ```
 select distinct ?cardDeck ?story ?iconography
@@ -445,7 +445,7 @@ where {
 
 ### Big dimension
 
-How many cards have a big iconographic dimension?
+How many cards have a big miniature reproduction?
 
 ```
 select distinct ?typology (COUNT(DISTINCT ?cardDeck) AS ?n)
@@ -466,7 +466,7 @@ GROUP BY ?typology ORDER BY DESC (?n)
 
 ### Small dimension
 
-How many cards have a small iconographic dimension?
+How many cards have a small miniature reproduction?
 
 ```
 select distinct ?typology (COUNT(DISTINCT ?cardDeck) AS ?n)
